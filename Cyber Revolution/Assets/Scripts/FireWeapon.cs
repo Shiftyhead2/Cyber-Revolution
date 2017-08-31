@@ -16,7 +16,9 @@ public class FireWeapon : MonoBehaviour {
 	[Header("Shop config")]
 	public bool IsActive;
 
+
 	[Header("Weapon Statics")]
+	public bool HasHalfReload; //Checks if the gun in question has an alternative reload animation
 	public float range = 100f; // Range of the weapon
 	public int BulletsPerMag = 30; //Bullets Per Each Magazine
 	public int BulletsLeft = 200; // Bullets Left
@@ -57,6 +59,7 @@ public class FireWeapon : MonoBehaviour {
 	float firetimer;
 
 	private bool IsReload;
+	private bool IsHalfReload;
 
 	[Header("UI")]
 	public Text CurrentAmmoText;
@@ -83,15 +86,19 @@ public class FireWeapon : MonoBehaviour {
 
 	#region Update
 	// Update is called once per frame
-	void Update () {
-		//This is the input where if you press mouse 1 or ctrl you shoot if you have bullets however if you don't you automaticly reload
-		if (Input.GetButton ("Fire1")) {
+	void Update ()
+	{
+		//This is the input where if you press mouse 1 or ctrl you shoot if you have bullets
+		if(Input.GetButton("Fire1")){
 			if (CurrentBullets > 0) {
 				Fire ();
-			} else if(BulletsLeft > 0) {
+			} else if (BulletsLeft > 0) {
 				DoReload ();
 			}
 		}
+			
+		
+
 		//Manual reloading 
 		if (Input.GetKeyDown (KeyCode.R)) {
 			if (CurrentBullets < BulletsPerMag && BulletsLeft > 0) {
@@ -112,6 +119,8 @@ public class FireWeapon : MonoBehaviour {
 				CrosshairAnimator.CrossFadeInFixedTime ("Normal", 0.1f);
 			}
 		}
+	
+
 
 
 		//Firerate checking
@@ -135,10 +144,8 @@ public class FireWeapon : MonoBehaviour {
 			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = true;
 			OurParent.GetComponent<PlayerHP> ().enabled = true;
 		}
-
-
-
 	}
+
 	#endregion 
 
 	#region FixedUpdate
@@ -147,6 +154,7 @@ public class FireWeapon : MonoBehaviour {
 		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo (0);
 		
 		IsReload = info.IsName ("Reload");
+		IsHalfReload = info.IsName ("HalfReload");
 
 		}
 	#endregion
@@ -158,7 +166,7 @@ public class FireWeapon : MonoBehaviour {
 	#region Firing the weapon
 	private void Fire(){
 		//Checking if all of these are not true. 
-		if (firetimer < firerate || CurrentBullets <= 0 || IsReload || OurParent.GetComponent<PlayerHP>().PlayerIsShooping != false || GameManager.GetComponent<PauseManager>().IsPaused) 
+		if (firetimer < firerate || CurrentBullets <= 0 || IsReload ||IsHalfReload|| OurParent.GetComponent<PlayerHP>().PlayerIsShooping != false || GameManager.GetComponent<PauseManager>().IsPaused) 
 			return;
 		
 		RaycastHit hit;
@@ -251,11 +259,17 @@ public class FireWeapon : MonoBehaviour {
 	private void DoReload(){
 		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo (0);
 
-		if (IsReload)
+		if (IsReload|| IsHalfReload)
 			return;
 		
-		anim.CrossFadeInFixedTime ("Reload", 0.01f);
+		if (CurrentBullets < BulletsPerMag && CurrentBullets > 0 && HasHalfReload == true ) {
+			anim.CrossFadeInFixedTime ("HalfReload", 0.01f);
+		} else {
+			anim.CrossFadeInFixedTime ("Reload", 0.01f);
+		}
+
 		MyAudioSource.PlayOneShot (ClipOut);
+
 	}
 	#endregion
 
@@ -266,7 +280,10 @@ public class FireWeapon : MonoBehaviour {
 	private void StableAim(){
 		maxSpread = aimSpread;
 
-	}
-
-
 }
+}
+
+
+
+
+
