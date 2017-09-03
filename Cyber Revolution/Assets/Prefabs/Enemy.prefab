@@ -862,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d77dc3f5345d347bc96543424c6145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myAgent: {fileID: 0}
   DestinationPoint: {fileID: 0}
   MyAnim: {fileID: 0}
   MyAudio: {fileID: 0}

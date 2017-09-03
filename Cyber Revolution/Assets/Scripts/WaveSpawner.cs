@@ -13,6 +13,7 @@ public class WaveSpawner : MonoBehaviour {
 		public Transform Enemy;
 		public int Count;
 		public float Rate;
+
 		
 	}
 
@@ -57,6 +58,7 @@ public class WaveSpawner : MonoBehaviour {
 			}
 		} else {
 			waveCountDown -= Time.deltaTime;
+			waveCountDown = Mathf.Clamp (waveCountDown, 0f, Mathf.Infinity);
 		}
 	}
 
@@ -103,7 +105,6 @@ public class WaveSpawner : MonoBehaviour {
 	}
 
 	void SpawnEnemy(Transform _enemy){
-
 
 		//Debug.Log ("Spawning enemy:" + _enemy.name);
 		Transform _sp = SpawnPoint [Random.Range (0, SpawnPoint.Length)];

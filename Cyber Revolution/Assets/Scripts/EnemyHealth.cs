@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	#region Variables
 	[Header("Enemy Health variable.")]
-	[SerializeField] private float health = 100f;
+	public float health = 100f;
 	[SerializeField] private float ArmorPoints;
 	public GameObject GameManager;
 	[SerializeField] private int Cost;
@@ -20,6 +20,8 @@ public class EnemyHealth : MonoBehaviour {
 		Cost = Random.Range (15, 150);
 		Audio = GetComponent<AudioSource> ();
 	}
+
+
 
 
 	#region ApplyDamage

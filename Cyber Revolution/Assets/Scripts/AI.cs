@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class AI : MonoBehaviour {
 	
 	#region Variables
-	private NavMeshAgent myAgent;
+	public NavMeshAgent myAgent;
 	public Transform DestinationPoint;
 	public Animator MyAnim;
 	public AudioSource MyAudio;
@@ -43,12 +43,19 @@ public class AI : MonoBehaviour {
 
 		damageRate = Time.time;
 	}
+		
 
 
 
 	#region AI functions
 	// Update is called once per frame
 	void Update () {
+		if (MyAudio.enabled == false) {
+			//Don't spam me with warning messages
+		}
+
+
+
 		float speed = myAgent.velocity.magnitude / myAgent.speed;
 		MyAnim.SetFloat ("SpeedPercent", speed, .1f, Time.deltaTime);
 
