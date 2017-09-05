@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour {
 
 	public enum SpawnState {Spawning,Waiting,Counting};
+	public Text WaveSpawnerNumber;
+	public Text WaveIndicator;
+	public Text EnemiesRemaining;
+	public string WaveCompletedText;
 
 	[System.Serializable]
 	public class Wave {
@@ -60,6 +65,7 @@ public class WaveSpawner : MonoBehaviour {
 			waveCountDown -= Time.deltaTime;
 			waveCountDown = Mathf.Clamp (waveCountDown, 0f, Mathf.Infinity);
 		}
+		WaveSpawnerNumber.text = string.Format ("{0:00.00}", waveCountDown);
 	}
 
 	void WaveCompleted(){
@@ -67,6 +73,8 @@ public class WaveSpawner : MonoBehaviour {
 
 		state = SpawnState.Counting;
 		waveCountDown = timeBetweenWaves;
+		WaveIndicator.text = WaveCompletedText;
+		EnemiesRemaining.text = "0";
 
 		if (nextWave + 1 > waves.Length - 1) {
 			nextWave = 0;
@@ -92,6 +100,9 @@ public class WaveSpawner : MonoBehaviour {
 	IEnumerator SpawnWave(Wave _wave){
 		//Debug.Log ("Spawning wave:" + _wave.Name);
 		state = SpawnState.Spawning;
+
+		WaveIndicator.text = _wave.Name;
+		EnemiesRemaining.text = _wave.Count.ToString ();
 
 		//Spawn
 		for(int i = 0; i < _wave.Count; i++){

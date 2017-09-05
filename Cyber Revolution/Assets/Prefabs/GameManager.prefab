@@ -69,30 +69,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c447e6a4cb4c8540947e600f2e6124e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaveSpawnerNumber: {fileID: 0}
+  WaveIndicator: {fileID: 0}
+  EnemiesRemaining: {fileID: 0}
+  WaveCompletedText: Wave completed
   waves:
   - Name: Wave 1
     Enemy: {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     Count: 8
-    moveSpeed: 3.5
-    enemyHealth: 0
     Rate: 2
   - Name: Wave 2
     Enemy: {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     Count: 16
-    moveSpeed: 4
-    enemyHealth: 10
     Rate: 1.5
   - Name: Wave 3
     Enemy: {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     Count: 24
-    moveSpeed: 4.5
-    enemyHealth: 10
     Rate: 1
   - Name: Wave 4
     Enemy: {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     Count: 32
-    moveSpeed: 5
-    enemyHealth: 20
     Rate: 0.5
   SpawnPoint:
   - {fileID: 0}

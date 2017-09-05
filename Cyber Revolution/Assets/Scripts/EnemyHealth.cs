@@ -12,7 +12,6 @@ public class EnemyHealth : MonoBehaviour {
 	[SerializeField] private int Cost;
 	public AudioSource Audio;
 	public AudioClip[] HurtClips;
-	public AudioClip[] DeathClips;
 	#endregion
 
 	void Awake(){
@@ -37,8 +36,6 @@ public class EnemyHealth : MonoBehaviour {
 			health -= damage;
 		}
 		if (health <= 0f) {
-			Audio.clip = DeathClips[Random.Range(0,DeathClips.Length-1)];
-			AudioSource.PlayClipAtPoint (Audio.clip, this.gameObject.transform.position);
 			Destroy (gameObject);
 			GameManager.GetComponent<CurrencyManager> ().Money += Cost;
 
