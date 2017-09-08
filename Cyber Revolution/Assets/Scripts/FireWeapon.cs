@@ -225,6 +225,7 @@ public class FireWeapon : MonoBehaviour {
 			}
 		}
 
+
 		anim.CrossFadeInFixedTime ("Fire", 0.01f);
 		muzzleFlash.Play ();
 		PlayAudioClip ();

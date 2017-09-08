@@ -14,6 +14,7 @@ public class AI : MonoBehaviour {
 	public AudioClip[] AttackClips;
 	public float AudioTime;
 	public float AudioDelay;
+	public float MoveSpeed;
 
 	public bool chaseTarget = true;
 	public float stoppingDistance = 2f;
@@ -41,6 +42,8 @@ public class AI : MonoBehaviour {
 		MyAudio = GetComponent<AudioSource> ();
 		AudioDelay = Random.Range (10, 30);
 
+		myAgent.speed = MoveSpeed;
+
 		damageRate = Time.time;
 	}
 		
@@ -54,10 +57,9 @@ public class AI : MonoBehaviour {
 			//Don't spam me with warning messages
 		}
 
-
-
 		float speed = myAgent.velocity.magnitude / myAgent.speed;
 		MyAnim.SetFloat ("SpeedPercent", speed, .1f, Time.deltaTime);
+
 
 		if (AudioTime < AudioDelay) {
 			AudioTime += Time.deltaTime;
@@ -99,14 +101,11 @@ public class AI : MonoBehaviour {
 				MyAudio.Play ();
 				AudioTime = 0f;
 				AudioDelay = Random.Range (10, 50);
+
 			}
 		} else {
 			
 		}
-
-			
-		
-
 
 	}
 

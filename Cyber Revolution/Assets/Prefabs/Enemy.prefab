@@ -567,7 +567,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653566198516998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.8210316, y: 0.2008369, z: -3.2884693}
+  m_LocalPosition: {x: 4.53, y: 1.98, z: 5.5527973}
   m_LocalScale: {x: 0.7952129, y: 0.7952129, z: 0.7952129}
   m_Children:
   - {fileID: 4874291055490216}
@@ -888,6 +888,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8793eaa13aaa1104db15fcc37610cd0c, type: 3}
   AudioTime: 0
   AudioDelay: 0
+  MoveSpeed: 3.5
+  AttackSpeed: 0
   chaseTarget: 1
   stoppingDistance: 2.5
   damage: 10
@@ -915,12 +917,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08b3b04e38352d548984d8a343072f40, type: 3}
   - {fileID: 8300000, guid: 6f9c4b125103bad45a0eed5d0a0bec01, type: 3}
   - {fileID: 8300000, guid: f89a5ef93692e2b49bd0b9f0bd5276ce, type: 3}
-  DeathClips:
-  - {fileID: 8300000, guid: 296d9f7debde13a45a6a2459b1a58090, type: 3}
-  - {fileID: 8300000, guid: a132646ac8df6154ea79774dc48711ac, type: 3}
-  - {fileID: 8300000, guid: e94d71e5ec8970a4aa45f8b4d880d27f, type: 3}
-  - {fileID: 8300000, guid: 5a3d75fd63e1d014ca40c485a2e853e8, type: 3}
-  - {fileID: 8300000, guid: 13a1e099fa5d88049869aac8041aea98, type: 3}
 --- !u!137 &137649359512243618
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -989,7 +985,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1653566198516998}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

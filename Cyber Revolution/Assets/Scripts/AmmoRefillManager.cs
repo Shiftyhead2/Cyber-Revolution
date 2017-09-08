@@ -26,7 +26,7 @@ public class AmmoRefillManager : MonoBehaviour {
 	private void CheckAmmo(){
 		foreach (Transform weapons in WeaponHolder.transform) {
 			if (weapons.GetComponent<FireWeapon> ().IsActive == true) {
-				if (weapons.GetComponent<FireWeapon> ().BulletsLeft < weapons.GetComponent<FireWeapon> ().MaxBullets) {
+				if (weapons.GetComponent<FireWeapon> ().BulletsLeft < weapons.GetComponent<FireWeapon> ().MaxBullets && CostMultiplier <= WeaponHolder.transform.childCount -1) {
 					CostMultiplier++;
 					Cost = Cost + (CostMultiplier * 2);
 				} else if (weapons.GetComponent<FireWeapon> ().BulletsLeft >= weapons.GetComponent<FireWeapon> ().MaxBullets || CostMultiplier == 0) {
