@@ -567,7 +567,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653566198516998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.53, y: 1.98, z: 5.5527973}
+  m_LocalPosition: {x: 5.3297877, y: 0.20083678, z: -3.9068754}
   m_LocalScale: {x: 0.7952129, y: 0.7952129, z: 0.7952129}
   m_Children:
   - {fileID: 4874291055490216}
@@ -765,7 +765,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a5372b94a02071f43aa2fbf7ea9e5c81, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.45
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -889,7 +889,6 @@ MonoBehaviour:
   AudioTime: 0
   AudioDelay: 0
   MoveSpeed: 3.5
-  AttackSpeed: 0
   chaseTarget: 1
   stoppingDistance: 2.5
   damage: 10
@@ -917,6 +916,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08b3b04e38352d548984d8a343072f40, type: 3}
   - {fileID: 8300000, guid: 6f9c4b125103bad45a0eed5d0a0bec01, type: 3}
   - {fileID: 8300000, guid: f89a5ef93692e2b49bd0b9f0bd5276ce, type: 3}
+  Corpse: {fileID: 4848858675812588, guid: 9370e26977d0a334e89f6d3948a672ed, type: 2}
 --- !u!137 &137649359512243618
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -113,7 +113,7 @@ public class AI : MonoBehaviour {
 		if (Time.time > damageRate) {
 			MyAnim.SetTrigger ("Attack");
 			MyAnim.SetFloat ("AttackPercent", Random.Range (0f, 3f), .1f, Time.deltaTime);
-			if (!MyAudio.isPlaying) {
+			if (!MyAudio.isPlaying && MyAudio != null) {
 				MyAudio.clip = AttackClips [(Random.Range (0, AttackClips.Length - 1))];
 				MyAudio.Play ();
 				AudioTime = 0f;
