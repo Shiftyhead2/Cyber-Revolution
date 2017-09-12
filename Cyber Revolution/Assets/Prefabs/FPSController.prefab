@@ -166,7 +166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1115950316818588
 GameObject:
   m_ObjectHideFlags: 1
@@ -377,6 +377,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1387296656978734
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4233128075232648}
+  m_Layer: 8
+  m_Name: ShellEjection_Mac10
+  m_TagString: Untagged
+  m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1393680138449522
 GameObject:
   m_ObjectHideFlags: 1
@@ -550,7 +565,22 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!1 &1655454068411954
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4178627305434752}
+  m_Layer: 8
+  m_Name: ShellEjection
+  m_TagString: Untagged
+  m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1656557470018240
 GameObject:
   m_ObjectHideFlags: 1
@@ -650,6 +680,21 @@ GameObject:
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1839594357007110
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4355004137211738}
+  m_Layer: 8
+  m_Name: ShellEjection_VEPR
+  m_TagString: Untagged
+  m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -804,6 +849,7 @@ Transform:
   - {fileID: 4654831013004284}
   - {fileID: 4794065573198560}
   - {fileID: 4442467833813662}
+  - {fileID: 4178627305434752}
   m_Father: {fileID: 4335864485295028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 3.804, z: 0}
@@ -888,6 +934,19 @@ Transform:
   m_Father: {fileID: 4024826983892602}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4178627305434752
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655454068411954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.92, y: 2.32, z: -0.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4024826983892602}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4185568258496014
 Transform:
   m_ObjectHideFlags: 1
@@ -944,6 +1003,19 @@ Transform:
   m_Father: {fileID: 4335864485295028}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4233128075232648
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387296656978734}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -1.29, y: 3.57, z: 0.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4403273914833800}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4303281300208600
 Transform:
   m_ObjectHideFlags: 1
@@ -1046,6 +1118,19 @@ Transform:
   m_Father: {fileID: 4758811165189828}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4355004137211738
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839594357007110}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0}
+  m_LocalPosition: {x: -0.344, y: 0.53, z: 2.03}
+  m_LocalScale: {x: 0.6557486, y: 0.65574825, z: 0.6557487}
+  m_Children: []
+  m_Father: {fileID: 4758811165189828}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4373375488721288
 Transform:
   m_ObjectHideFlags: 1
@@ -1074,6 +1159,7 @@ Transform:
   - {fileID: 4897561490108458}
   - {fileID: 4373375488721288}
   - {fileID: 4818267286470432}
+  - {fileID: 4233128075232648}
   m_Father: {fileID: 4335864485295028}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1316,6 +1402,7 @@ Transform:
   - {fileID: 4027356097276348}
   - {fileID: 4344170403215276}
   - {fileID: 4638989309472194}
+  - {fileID: 4355004137211738}
   m_Father: {fileID: 4335864485295028}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -3288,6 +3375,9 @@ MonoBehaviour:
   aimSpread: 0.03
   ShotgunPellets: 10
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 0}
+  ShellEjection: {fileID: 0}
+  CanEject: 0
   muzzleFlash: {fileID: 198443377603504658}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3330,6 +3420,9 @@ MonoBehaviour:
   aimSpread: 0.05
   ShotgunPellets: 8
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 0}
+  ShellEjection: {fileID: 0}
+  CanEject: 0
   muzzleFlash: {fileID: 198766200279739192}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3372,6 +3465,9 @@ MonoBehaviour:
   aimSpread: 0.01
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
+  ShellEjection: {fileID: 4355004137211738}
+  CanEject: 1
   muzzleFlash: {fileID: 198939536995583244}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3571,6 +3667,9 @@ MonoBehaviour:
   aimSpread: 0.02
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
+  ShellEjection: {fileID: 4233128075232648}
+  CanEject: 1
   muzzleFlash: {fileID: 198304671976101728}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3613,6 +3712,9 @@ MonoBehaviour:
   aimSpread: 0.02
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 0}
+  ShellEjection: {fileID: 0}
+  CanEject: 0
   muzzleFlash: {fileID: 198885097815152726}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3655,6 +3757,9 @@ MonoBehaviour:
   aimSpread: 0
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
+  ShellEjection: {fileID: 4178627305434752}
+  CanEject: 1
   muzzleFlash: {fileID: 198863259202763120}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -3697,6 +3802,9 @@ MonoBehaviour:
   aimSpread: 0.01
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
+  Shell: {fileID: 0}
+  ShellEjection: {fileID: 0}
+  CanEject: 0
   muzzleFlash: {fileID: 198997921611696372}
   HitParticles: {fileID: 1360412444755606, guid: c13dad9d9db697f4887da4a65d131ba4,
     type: 2}
@@ -11505,7 +11613,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1862327657
+  randomSeed: 1208551513
   InitialModule:
     serializedVersion: 3
     enabled: 1

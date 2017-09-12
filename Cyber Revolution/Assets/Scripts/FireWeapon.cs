@@ -38,6 +38,9 @@ public class FireWeapon : MonoBehaviour {
 
 	[Header("Weapon Config")]
 	public Transform ShootPoint; //the point where the raycast is spawned
+	public Transform Shell; //shell object which the gun ejects
+	public Transform ShellEjection; //shell object from which the shell is ejected
+	public bool CanEject;//bool to check if the said gun can eject shells
 	public ParticleSystem muzzleFlash; //muzzle flash particle system
 	public GameObject HitParticles; //hit particles that spawn
 	public GameObject BulletObject; //Bullet holes
@@ -191,6 +194,8 @@ public class FireWeapon : MonoBehaviour {
 					BulletObjectEffect.transform.SetParent (hit.transform);
 
 
+
+
 					Destroy (BulletObjectEffect, 5f);
 					Destroy (hitParticlesEffect, 1f);
 
@@ -214,6 +219,10 @@ public class FireWeapon : MonoBehaviour {
 				//Spawning both hit particles and bullet holes and setting their parents to whatever the ray cast hit
 				GameObject BulletObjectEffect = Instantiate (BulletObject, hit.point, Quaternion.FromToRotation (Vector3.forward, hit.normal));
 				BulletObjectEffect.transform.SetParent (hit.transform);
+
+				if (CanEject) {
+					Instantiate (Shell, ShellEjection.position,ShellEjection.rotation);
+				}
 
 
 				Destroy (BulletObjectEffect, 5f);
