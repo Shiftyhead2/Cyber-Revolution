@@ -5765,6 +5765,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: PauseMenuCanvas
+      value: 
+      objectReference: {fileID: 51505468}
+    - target: {fileID: 114879593856460956, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: CurrentMoneyText
+      value: 
+      objectReference: {fileID: 1558131790}
     - target: {fileID: 114800274965095674, guid: 7f302704a6fde3c4db98d996a978153f,
         type: 2}
       propertyPath: WaveSpawnerNumber
@@ -5835,16 +5845,6 @@ Prefab:
       propertyPath: SpawnPoint.Array.data[10]
       value: 
       objectReference: {fileID: 351309353}
-    - target: {fileID: 114879593856460956, guid: 7f302704a6fde3c4db98d996a978153f,
-        type: 2}
-      propertyPath: CurrentMoneyText
-      value: 
-      objectReference: {fileID: 1558131790}
-    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
-        type: 2}
-      propertyPath: PauseMenuCanvas
-      value: 
-      objectReference: {fileID: 51505468}
     - target: {fileID: 114800274965095674, guid: 7f302704a6fde3c4db98d996a978153f,
         type: 2}
       propertyPath: m_Enabled
@@ -6031,177 +6031,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f4abd58c52f777f43920882b54d91b56, type: 3}
   m_PrefabInternal: {fileID: 534738028}
---- !u!1001 &536422290
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.8320103
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.197
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.9995456
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.030145098
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: PlayerHPtext
-      value: 
-      objectReference: {fileID: 927019821}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: DamageScreen
-      value: 
-      objectReference: {fileID: 2088583224}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: HealingScreen
-      value: 
-      objectReference: {fileID: 245077390}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: HealthSlider
-      value: 
-      objectReference: {fileID: 1858912333}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: MainCamera
-      value: 
-      objectReference: {fileID: 2083139172}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: PlayerCanvas
-      value: 
-      objectReference: {fileID: 1145797709}
-    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: GameOverCanvas
-      value: 
-      objectReference: {fileID: 1699570080}
-    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 1856768255}
-    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 923589371}
-    - target: {fileID: 4355004137211738, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.713
-      objectReference: {fileID: 0}
-    - target: {fileID: 4355004137211738, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4355004137211738, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295498025648872, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1627117504443358, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4178627305434752, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.082
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &542534418
 Prefab:
   m_ObjectHideFlags: 0
@@ -13652,6 +13481,153 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 6400000, guid: f4abd58c52f777f43920882b54d91b56, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: f4abd58c52f777f43920882b54d91b56, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1001 &1180964865
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.8320103
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.197
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.9995456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.030145098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338833289800114, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: PlayerHPtext
+      value: 
+      objectReference: {fileID: 927019821}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: DamageScreen
+      value: 
+      objectReference: {fileID: 2088583224}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: HealingScreen
+      value: 
+      objectReference: {fileID: 245077390}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: HealthSlider
+      value: 
+      objectReference: {fileID: 1858912333}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 2083139172}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: PlayerCanvas
+      value: 
+      objectReference: {fileID: 1145797709}
+    - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: GameOverCanvas
+      value: 
+      objectReference: {fileID: 1699570080}
+    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: CurrentAmmoText
+      value: 
+      objectReference: {fileID: 1856768255}
+    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: BulletsLeftAmmoText
+      value: 
+      objectReference: {fileID: 923589371}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1181068782 stripped
 GameObject:

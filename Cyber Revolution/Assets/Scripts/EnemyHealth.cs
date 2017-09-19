@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour {
 	public float health = 100f;
 	[SerializeField] private float ArmorPoints;
 	public GameObject GameManager;
+	[SerializeField] private int MinCost;
+	[SerializeField] private int MaxCost;
 	[SerializeField] private int Cost;
 	public AudioSource Audio;
 	public AudioClip[] HurtClips;
@@ -17,7 +19,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	void Awake(){
 		GameManager =  GameObject.FindGameObjectWithTag ("GameManager");
-		Cost = Random.Range (15, 150);
+		Cost = Random.Range (MinCost, MaxCost);
 		Audio = GetComponent<AudioSource> ();
 	}
 
@@ -36,7 +38,7 @@ public class EnemyHealth : MonoBehaviour {
 			Audio.Play();
 		}
 		if (ArmorPoints != 0f) {
-			health -= damage / ArmorPoints;
+			health -= damage - ArmorPoints;
 		} else {
 			health -= damage;
 		}

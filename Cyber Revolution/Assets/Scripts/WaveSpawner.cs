@@ -15,7 +15,7 @@ public class WaveSpawner : MonoBehaviour {
 	public class Wave {
 		
 		public string Name;
-		public Transform Enemy;
+		public Transform[] Enemy;
 		public int Count;
 		public float Rate;
 
@@ -106,7 +106,8 @@ public class WaveSpawner : MonoBehaviour {
 
 		//Spawn
 		for(int i = 0; i < _wave.Count; i++){
-			SpawnEnemy (_wave.Enemy);
+			Transform _enemies = _wave.Enemy [Random.Range (0, _wave.Enemy.Length)];
+			SpawnEnemy (_enemies);
 			yield return new WaitForSeconds (1f / _wave.Rate);
 		}
 

@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: 96cc565afe6fe2443a136252e529587f
+timeCreated: 1505722449
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest
+    100002: //RootNode
+    100004: Enemy2
+    100006: Enemy2Rig
+    100008: Feet.L
+    100010: Feet.L_end
+    100012: Feet.R
+    100014: Feet.R_end
+    100016: Hand.L
+    100018: Hand.L_end
+    100020: Hand.R
+    100022: Hand.R_end
+    100024: Head
+    100026: Head_end
+    100028: Hip
+    100030: LowerArm.L
+    100032: LowerArm.R
+    100034: LowerLeg.L
+    100036: LowerLeg.R
+    100038: Neck
+    100040: Shoulder.L
+    100042: Shoulder.R
+    100044: Spine
+    100046: UpperLeg.L
+    100048: UpperLeg.R
+    400000: Chest
+    400002: //RootNode
+    400004: Enemy2
+    400006: Enemy2Rig
+    400008: Feet.L
+    400010: Feet.L_end
+    400012: Feet.R
+    400014: Feet.R_end
+    400016: Hand.L
+    400018: Hand.L_end
+    400020: Hand.R
+    400022: Hand.R_end
+    400024: Head
+    400026: Head_end
+    400028: Hip
+    400030: LowerArm.L
+    400032: LowerArm.R
+    400034: LowerLeg.L
+    400036: LowerLeg.R
+    400038: Neck
+    400040: Shoulder.L
+    400042: Shoulder.R
+    400044: Spine
+    400046: UpperLeg.L
+    400048: UpperLeg.R
+    4300000: Enemy2
+    7400000: Enemy2Rig|Attack1
+    7400002: Enemy2Rig|Attack2
+    7400004: Enemy2Rig|Attack3
+    7400006: Enemy2Rig|DIe
+    7400008: Enemy2Rig|Idle
+    7400010: Enemy2Rig|Run
+    9500000: //RootNode
+    13700000: Enemy2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Enemy2Rig|Attack1
+      takeName: Enemy2Rig|Attack1
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy2Rig|Attack2
+      takeName: Enemy2Rig|Attack2
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy2Rig|Attack3
+      takeName: Enemy2Rig|Attack3
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy2Rig|DIe
+      takeName: Enemy2Rig|DIe
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy2Rig|Idle
+      takeName: Enemy2Rig|Idle
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy2Rig|Run
+      takeName: Enemy2Rig|Run
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy2
+        weight: 1
+      - path: Enemy2Rig
+        weight: 1
+      - path: Enemy2Rig/Hip
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.L/LowerArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Enemy2Rig/Hip/Spine/Chest/Shoulder.R/LowerArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.L/LowerLeg.L/Feet.L/Feet.L_end
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R
+        weight: 1
+      - path: Enemy2Rig/Hip/UpperLeg.R/LowerLeg.R/Feet.R/Feet.R_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

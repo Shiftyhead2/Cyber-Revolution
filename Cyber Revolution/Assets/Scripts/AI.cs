@@ -15,6 +15,7 @@ public class AI : MonoBehaviour {
 	public float AudioTime;
 	public float AudioDelay;
 	public float MoveSpeed;
+	public float LookSpeed;
 
 	public bool chaseTarget = true;
 	public float stoppingDistance = 2f;
@@ -91,6 +92,7 @@ public class AI : MonoBehaviour {
 			chaseTarget = true;
 		} else {
 			chaseTarget = false;
+			FacePlayer ();
 			Attack ();
 		}
 		if (chaseTarget) {
@@ -107,6 +109,12 @@ public class AI : MonoBehaviour {
 			
 		}
 
+	}
+
+	void FacePlayer(){
+		Vector3 direction = (DestinationPoint.position - transform.position).normalized;
+		Quaternion lookRotation = Quaternion.LookRotation (new Vector3 (direction.x, 0, direction.z));
+		transform.rotation = Quaternion.Slerp (transform.rotation, lookRotation, Time.deltaTime * LookSpeed);
 	}
 
 	void Attack(){

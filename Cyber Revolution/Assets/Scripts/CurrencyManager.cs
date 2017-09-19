@@ -11,7 +11,7 @@ public class CurrencyManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		Money = 99999;
+		Money = 100;
 		CurrentMoneyText.text = Money.ToString () + "$";
 
 	}
