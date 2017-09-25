@@ -220,9 +220,7 @@ public class FireWeapon : MonoBehaviour {
 				GameObject BulletObjectEffect = Instantiate (BulletObject, hit.point, Quaternion.FromToRotation (Vector3.forward, hit.normal));
 				BulletObjectEffect.transform.SetParent (hit.transform);
 
-				if (CanEject) {
-					Instantiate (Shell, ShellEjection.position,ShellEjection.rotation);
-				}
+
 
 
 				Destroy (BulletObjectEffect, 5f);
@@ -239,6 +237,9 @@ public class FireWeapon : MonoBehaviour {
 		muzzleFlash.Play ();
 		PlayAudioClip ();
 
+		if (CanEject) {
+			Instantiate (Shell, ShellEjection.position,ShellEjection.rotation);
+		}
 
 		CurrentBullets--;
 		CurrentAmmoText.text = CurrentBullets.ToString ();
