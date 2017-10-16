@@ -12,7 +12,7 @@ public class EnemyCorpse : MonoBehaviour {
 	void Start () {
 		CorpseAudio = GetComponent<AudioSource> ();
 		if (!CorpseAudio.isPlaying && CorpseAudio != null) {
-			CorpseAudio.clip = DeathClips [Random.Range (0, DeathClips.Length - 1)];
+			CorpseAudio.clip = DeathClips [Random.Range (0, DeathClips.Length)];
 			CorpseAudio.Play ();
 		}
 	}

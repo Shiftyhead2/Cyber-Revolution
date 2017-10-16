@@ -21,6 +21,10 @@ public class EnemyHealth : MonoBehaviour {
 	[Header("UI")]
 	public Image HealthBar;
 	public Image HealthBarSlider;
+	public GameObject MoneyGained;
+	public Text MoneyGainedText;
+
+	[SerializeField] private Animator TextAnimator;
 
 	#endregion
 
@@ -28,9 +32,15 @@ public class EnemyHealth : MonoBehaviour {
 		HealthBarSlider.enabled = false;
 		HealthBar.enabled = false;
 		GameManager =  GameObject.FindGameObjectWithTag ("GameManager");
+		MoneyGained = GameObject.Find ("MoneyGained");
+		MoneyGainedText = MoneyGained.GetComponent<Text> ();
+		TextAnimator = MoneyGained.GetComponent<Animator> ();
 		Cost = Random.Range (MinCost, MaxCost);
+	
 		Audio = GetComponent<AudioSource> ();
 		CurrentHealth = StartHealth;
+
+
 	}
 
 	void Update(){
@@ -48,7 +58,7 @@ public class EnemyHealth : MonoBehaviour {
 
 
 		if (!Audio.isPlaying && Audio != null) {
-			Audio.clip = HurtClips[Random.Range(0,HurtClips.Length-1)];
+			Audio.clip = HurtClips[Random.Range(0,HurtClips.Length)];
 			Audio.Play();
 		}
 		if (ArmorPoints != 0f) {
@@ -63,6 +73,8 @@ public class EnemyHealth : MonoBehaviour {
 	private void Die(){
 		Destroy (gameObject);
 		Instantiate (Corpse, this.gameObject.transform.position, this.gameObject.transform.rotation);
+		TextAnimator.CrossFadeInFixedTime ("Gain Animation", 0.1f);
+		MoneyGainedText.text = "+" + Cost.ToString () + "$";
 		GameManager.GetComponent<CurrencyManager> ().Money += Cost;
 	}
 	#endregion

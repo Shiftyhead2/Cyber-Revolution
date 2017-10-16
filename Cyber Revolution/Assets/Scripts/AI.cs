@@ -99,7 +99,7 @@ public class AI : MonoBehaviour {
 			myAgent.SetDestination (DestinationPoint.position);
 			MyAnim.SetFloat ("AttackPercent",0f, .1f, Time.deltaTime);
 			if (!MyAudio.isPlaying && AudioTime > AudioDelay ) {
-				MyAudio.clip = ChaseClips [(Random.Range (0, ChaseClips.Length - 1))];
+				MyAudio.clip = ChaseClips [(Random.Range (0, ChaseClips.Length))];
 				MyAudio.Play ();
 				AudioTime = 0f;
 				AudioDelay = Random.Range (10, 50);
@@ -122,7 +122,7 @@ public class AI : MonoBehaviour {
 			MyAnim.SetTrigger ("Attack");
 			MyAnim.SetFloat ("AttackPercent", Random.Range (0f, 3f), .1f, Time.deltaTime);
 			if (!MyAudio.isPlaying && MyAudio != null) {
-				MyAudio.clip = AttackClips [(Random.Range (0, AttackClips.Length - 1))];
+				MyAudio.clip = AttackClips [(Random.Range (0, AttackClips.Length))];
 				MyAudio.Play ();
 				AudioTime = 0f;
 			}
@@ -130,11 +130,6 @@ public class AI : MonoBehaviour {
 			damageRate = Time.time + DamageDelay;
 		}
 		}
-
-
-
-
-
-
+		
 	#endregion
 }
