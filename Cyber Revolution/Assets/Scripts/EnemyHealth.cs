@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour {
 	[Header("Enemy Health variable.")]
 	public float StartHealth = 100f;
 	public float CurrentHealth;
+	public float HalfHealth;
 	[SerializeField] private float ArmorPoints;
 	public GameObject GameManager;
 	[SerializeField] private int MinCost;
@@ -39,6 +40,7 @@ public class EnemyHealth : MonoBehaviour {
 	
 		Audio = GetComponent<AudioSource> ();
 		CurrentHealth = StartHealth;
+		HalfHealth = StartHealth / 2f;
 
 
 	}

@@ -211,6 +211,7 @@ MonoBehaviour:
   Restart: {fileID: 114282223930454798}
   MainMenu: {fileID: 114753813074038360}
   Exit: {fileID: 114878883473556378}
+  GameOverCanvas: {fileID: 223695445571766094}
 --- !u!114 &114282223930454798
 MonoBehaviour:
   m_ObjectHideFlags: 1

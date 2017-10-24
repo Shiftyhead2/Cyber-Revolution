@@ -3453,7 +3453,7 @@ MonoBehaviour:
   BulletsLeft: 150
   CurrentBullets: 0
   MaxBullets: 150
-  damage: 5
+  damage: 10.5
   ArmorPenetration: 2.5
   normalSpread: 0
   TimeTillNextSpread: 0.01
@@ -3498,7 +3498,7 @@ MonoBehaviour:
   BulletsLeft: 32
   CurrentBullets: 0
   MaxBullets: 32
-  damage: 5
+  damage: 10
   ArmorPenetration: 2.5
   normalSpread: 0.04
   TimeTillNextSpread: 0.01
@@ -3543,7 +3543,7 @@ MonoBehaviour:
   BulletsLeft: 360
   CurrentBullets: 0
   MaxBullets: 360
-  damage: 15
+  damage: 30
   ArmorPenetration: 1.5
   normalSpread: 0
   TimeTillNextSpread: 0.1
@@ -3637,7 +3637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 5
-  m_RunSpeed: 8
+  m_RunSpeed: 7
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 5
   m_StickToGroundForce: 10
@@ -3745,7 +3745,7 @@ MonoBehaviour:
   BulletsLeft: 200
   CurrentBullets: 0
   MaxBullets: 200
-  damage: 10
+  damage: 15
   ArmorPenetration: 0.5
   normalSpread: 0
   TimeTillNextSpread: 0.1
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   BulletsLeft: 400
   CurrentBullets: 0
   MaxBullets: 400
-  damage: 5
+  damage: 25
   ArmorPenetration: 3.5
   normalSpread: 0
   TimeTillNextSpread: 0.01
@@ -3835,7 +3835,7 @@ MonoBehaviour:
   BulletsLeft: 160
   CurrentBullets: 0
   MaxBullets: 160
-  damage: 20
+  damage: 11.5
   ArmorPenetration: 0.5
   normalSpread: 0
   TimeTillNextSpread: 0.1
@@ -3880,7 +3880,7 @@ MonoBehaviour:
   BulletsLeft: 350
   CurrentBullets: 0
   MaxBullets: 350
-  damage: 9
+  damage: 16
   ArmorPenetration: 0.5
   normalSpread: 0
   TimeTillNextSpread: 0.1

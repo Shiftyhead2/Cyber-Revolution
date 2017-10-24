@@ -50,9 +50,11 @@ public class PauseManager : MonoBehaviour {
 	public void UnpauseGame(){
 		PauseMenuCanvas.enabled = false;
 		PlayerCanvas.SetActive (true);
-		if (Player.GetComponent<PlayerHP> ().PlayerIsShooping != true) {
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
+		if (Player != null) {
+			if (Player.GetComponent<PlayerHP> ().PlayerIsShooping != true) {
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = false;
+			}
 		}
 		Time.timeScale = 1f;
 	}

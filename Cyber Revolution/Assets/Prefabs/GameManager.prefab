@@ -64,7 +64,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071492966582406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c447e6a4cb4c8540947e600f2e6124e, type: 3}
   m_Name: 
@@ -89,12 +89,14 @@ MonoBehaviour:
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
     Count: 24
     Rate: 1
   - Name: Wave 4
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
     Count: 32
     Rate: 0.5
   SpawnPoint:

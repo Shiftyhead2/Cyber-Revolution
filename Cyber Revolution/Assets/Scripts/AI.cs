@@ -12,18 +12,22 @@ public class AI : MonoBehaviour {
 	public AudioSource MyAudio;
 	public AudioClip[] ChaseClips;
 	public AudioClip[] AttackClips;
+	public EnemyHealth HealthScript;
 	public float AudioTime;
 	public float AudioDelay;
 	public float MoveSpeed;
 	public float LookSpeed;
+	public float EnrageMoveSpeed;
 
 	public bool chaseTarget = true;
+	public bool canEnrage;
 	public float stoppingDistance = 2f;
 
 
 
 
 	public float damage = 10f;
+	public float EnrageDamage;
 	public float damageRate;
 	public float DamageDelay = 1.5f;
 
@@ -41,6 +45,7 @@ public class AI : MonoBehaviour {
 		thePlayer = GameObject.FindGameObjectWithTag ("Player");
 		MyAnim = GetComponent<Animator> ();
 		MyAudio = GetComponent<AudioSource> ();
+		HealthScript = GetComponent<EnemyHealth> ();
 		AudioDelay = Random.Range (10, 30);
 
 		myAgent.speed = MoveSpeed;
@@ -66,6 +71,12 @@ public class AI : MonoBehaviour {
 			AudioTime += Time.deltaTime;
 		}
 
+		if (canEnrage) {
+			if (HealthScript.CurrentHealth <= HealthScript.HalfHealth) {
+				Enrage ();
+			}
+		}
+
 		if (thePlayer == null) {
 			//Don't spam me error messages the player is dead
 		}else{
@@ -77,6 +88,7 @@ public class AI : MonoBehaviour {
 				Chase ();
 			}
 		}
+
 
 	}
 
@@ -129,7 +141,15 @@ public class AI : MonoBehaviour {
 			PlayerHealth.ApplyPlayerDamage (damage);
 			damageRate = Time.time + DamageDelay;
 		}
-		}
+			
+	}
+
+	void Enrage(){
+		MyAnim.SetTrigger ("Enrage");
+		MoveSpeed = EnrageMoveSpeed;
+		myAgent.speed = MoveSpeed;
+		damage = EnrageDamage;
+	}
 		
 	#endregion
 }

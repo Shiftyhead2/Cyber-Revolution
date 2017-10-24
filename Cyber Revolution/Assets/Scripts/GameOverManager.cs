@@ -9,11 +9,19 @@ public class GameOverManager : MonoBehaviour {
 	public Button Restart;
 	public Button MainMenu;
 	public Button Exit;
+	public Canvas GameOverCanvas;
 
 	void OnEnable(){
 		Restart.onClick.AddListener (delegate {RestartLevel ();});
 		MainMenu.onClick.AddListener (delegate {BackToMenu ();});
 		Exit.onClick.AddListener (delegate {ExitApplication ();});
+	}
+
+	void Update(){
+		if (GameOverCanvas.enabled != false) {
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+		}
 	}
 
 

@@ -83,8 +83,6 @@ public class PlayerHP : MonoBehaviour {
 		Damaged = true;
 		MyAudioSource.PlayOneShot (HurtSoundClip);
 		if (PlayerHealthPoints <= 0f) {
-			Cursor.lockState = CursorLockMode.None;
-			Cursor.visible = true;
 			MainCamera.GetComponent<Camera> ().enabled = true;
 			MainCamera.GetComponent<AudioListener> ().enabled = true;
 			PlayerCanvas.enabled = false;

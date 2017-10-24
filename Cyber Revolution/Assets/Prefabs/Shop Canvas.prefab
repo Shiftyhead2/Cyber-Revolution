@@ -1096,7 +1096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1998284601160574
 GameObject:
   m_ObjectHideFlags: 1
@@ -1179,7 +1179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M249 is a LMG that has decent damage of 5 and a armor penetration of 4.5.
+  m_Text: M249 is a LMG that has decent damage of 25 and a armor penetration of 4.5.
     Having almost uncontrolable recoil,fast firing with a 100 bullet magazine this
     weapon is a great trash  cleaner.
 --- !u!114 &114010423412254344
@@ -1338,7 +1338,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Medium firerate of 600 bullets per minute and a decent controllable bullet
-    spread with decent damage(15 per bullet) and armor penetration of 1.5 this bullpop
+    spread with decent damage(30 per bullet) and armor penetration of 1.5 this bullpop
     assault rifle from Ukraine is useful at long and medium ranges.
 --- !u!114 &114053086474831750
 MonoBehaviour:
@@ -2685,7 +2685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fast firerate,but a large bullet spread. This weapon does 10 damage with
+  m_Text: Fast firerate,but a large bullet spread. This weapon does 15 damage with
     0.5 armor penetration.With a 30 bullet magazine and a firerate of 1,250 rounds/min
     this weapon will prove to be deadly at close range.
 --- !u!114 &114561288572181768
@@ -3250,7 +3250,7 @@ MonoBehaviour:
   m_Text: 'Slow firerate with decent damage and low armor penetration. Warning this
     weapon only has 50 units of range and 20 ammo ,but does
 
-    20 damage with 0.5 armor penetration.'
+    11.5 damage with 0.5 armor penetration.'
 --- !u!114 &114790063437810366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3310,8 +3310,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fast firerate,decent spray control and low damage and armor penetration
-    with a 50 bullet magazine this weapon is great for Slavs to rush B.
+  m_Text: Fast firerate,decent spray control and 16 damage and armor penetration with
+    a 50 bullet magazine this weapon is great for Slavs to rush B.
 --- !u!114 &114802107323261304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4317,9 +4317,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -412.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224030220477305200
@@ -4485,9 +4485,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -137.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224211324763376032
@@ -4599,9 +4599,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -1237.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224323283714493968
@@ -4822,9 +4822,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -1512.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224483320080863064
@@ -4943,9 +4943,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -962.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224576792639118888
@@ -5370,9 +5370,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -687.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224907531930520444
@@ -5406,8 +5406,8 @@ RectTransform:
   m_Father: {fileID: 224111627855840538}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.45861936}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5434,7 +5434,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1544, y: 0}
+  m_SizeDelta: {x: 1544, y: 1925}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224979922407773402
 RectTransform:
@@ -5454,9 +5454,9 @@ RectTransform:
   m_Father: {fileID: 224974091080965872}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 772, y: -1787.5}
   m_SizeDelta: {x: 1544, y: 275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224982912752962778
