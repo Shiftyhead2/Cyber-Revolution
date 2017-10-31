@@ -59,7 +59,6 @@ public class PlayerHP : MonoBehaviour {
 		if (IsHealing != true) {
 			HealingScreen.color = Color.Lerp (HealingScreen.color, Color.clear, FlashSpeed*Time.deltaTime);
 		}
-
 		Damaged = false;
 
 		if (Input.GetKeyDown (KeyCode.Q)) {
@@ -79,6 +78,7 @@ public class PlayerHP : MonoBehaviour {
 
 	#region ApplyPlayerDamage
 	public void ApplyPlayerDamage(float damage){
+		damage = Mathf.Clamp (damage, 0, int.MaxValue);
 		PlayerHealthPoints -= damage;
 		Damaged = true;
 		MyAudioSource.PlayOneShot (HurtSoundClip);
@@ -98,17 +98,11 @@ public class PlayerHP : MonoBehaviour {
 			//Debug.Log ("Can't heal");
 			return;
 		}
-
 		IsHealing = true;
-
 		//Debug.Log ("Healing");
-
 		if (IsHealing != false) {
 			StartCoroutine (Healing ());
 		}
-
-	
-			
 		}
 		
 
@@ -130,10 +124,7 @@ public class PlayerHP : MonoBehaviour {
 			}
 		}
 		yield return new WaitForSeconds (5f);
-
 	}
-
-
 	}
 
 

@@ -29,16 +29,16 @@ public class EnemyHealth : MonoBehaviour {
 
 	#endregion
 
-	void Awake(){
+	void Start(){
+		Audio = GetComponent<AudioSource> ();
+		GameManager =  GameObject.FindGameObjectWithTag ("GameManager");
+		if (MoneyGained != null) {
+			MoneyGainedText = MoneyGained.GetComponent<Text> ();
+			TextAnimator = MoneyGained.GetComponent<Animator> ();
+		}
 		HealthBarSlider.enabled = false;
 		HealthBar.enabled = false;
-		GameManager =  GameObject.FindGameObjectWithTag ("GameManager");
-		MoneyGained = GameObject.Find ("MoneyGained");
-		MoneyGainedText = MoneyGained.GetComponent<Text> ();
-		TextAnimator = MoneyGained.GetComponent<Animator> ();
 		Cost = Random.Range (MinCost, MaxCost);
-	
-		Audio = GetComponent<AudioSource> ();
 		CurrentHealth = StartHealth;
 		HalfHealth = StartHealth / 2f;
 
@@ -46,6 +46,14 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void Update(){
+		if (MoneyGained == null) {
+			MoneyGained = GameObject.Find ("MoneyGained");
+			if (MoneyGained != null) {
+				MoneyGainedText = MoneyGained.GetComponent<Text> ();
+				TextAnimator = MoneyGained.GetComponent<Animator> ();
+			}
+
+		}
 		if (CurrentHealth <= 0f) {
 			Die ();
 		}
@@ -58,15 +66,17 @@ public class EnemyHealth : MonoBehaviour {
 		HealthBarSlider.enabled = true;
 		HealthBar.enabled = true;
 
-
 		if (!Audio.isPlaying && Audio != null) {
 			Audio.clip = HurtClips[Random.Range(0,HurtClips.Length)];
 			Audio.Play();
 		}
 		if (ArmorPoints != 0f) {
-			CurrentHealth-= damage - ArmorPoints;
+			damage -= ArmorPoints;
+			damage = Mathf.Clamp (damage, 0, int.MaxValue);
+			CurrentHealth -= damage;
 			HealthBar.fillAmount = CurrentHealth / StartHealth;
 		} else {
+			damage = Mathf.Clamp (damage, 0, int.MaxValue);
 			CurrentHealth -= damage;
 			HealthBar.fillAmount = CurrentHealth / StartHealth;
 		}
