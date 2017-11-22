@@ -65,25 +65,32 @@ public class FireWeapon : MonoBehaviour {
 	private bool IsHalfReload;
 
 	[Header("UI")]
-	public Text CurrentAmmoText;
-	public Text BulletsLeftAmmoText;
+	public GameObject AmmoUI;
+	public Text AmmoUIText;
 	public GameObject Crosshair;
 	[SerializeField]private Animator CrosshairAnimator;
 
 	#endregion
 
+	void OnEnable(){
+		AmmoUI = GameObject.Find ("Ammo Text");
+		AmmoUIText = AmmoUI.GetComponent<Text> ();
+		UpdateAmmo ();
+	}
+
 	#region Start
 	// Use this for initialization
 	void Start () {
+		AmmoUI = GameObject.Find ("Ammo Text");
+		AmmoUIText = AmmoUI.GetComponent<Text> ();
 		Crosshair = GameObject.FindGameObjectWithTag ("Crosshair");
 		MyAudioSource = GetComponent<AudioSource> ();
 		OurParent = GameObject.FindGameObjectWithTag ("Player");
 		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		CurrentBullets = BulletsPerMag;
-		CurrentAmmoText.text = CurrentBullets.ToString ();
-		BulletsLeftAmmoText.text = BulletsLeft.ToString ();
 		CrosshairAnimator = Crosshair.GetComponent<Animator> ();
 		maximumSpread = maxSpread;
+		UpdateAmmo ();
 	}
 	#endregion
 
@@ -130,8 +137,7 @@ public class FireWeapon : MonoBehaviour {
 		if (firetimer < firerate) {
 			firetimer += Time.deltaTime;
 		}
-		CurrentAmmoText.text = CurrentBullets.ToString ();
-		BulletsLeftAmmoText.text = BulletsLeft.ToString ();
+
 
 		if (SteadyAim != false) {
 			StableAim ();
@@ -242,7 +248,7 @@ public class FireWeapon : MonoBehaviour {
 		}
 
 		CurrentBullets--;
-		CurrentAmmoText.text = CurrentBullets.ToString ();
+		UpdateAmmo ();
 		firetimer = 0.0f;
 
 	}
@@ -258,8 +264,7 @@ public class FireWeapon : MonoBehaviour {
 
 		BulletsLeft -= BulletsToDeduct;
 		CurrentBullets += BulletsToDeduct;
-		CurrentAmmoText.text = CurrentBullets.ToString ();
-		BulletsLeftAmmoText.text = BulletsLeft.ToString ();
+		UpdateAmmo ();
 
 
 
@@ -290,8 +295,11 @@ public class FireWeapon : MonoBehaviour {
 
 	private void StableAim(){
 		maxSpread = aimSpread;
-
 }
+	public void UpdateAmmo(){
+		AmmoUIText.text = CurrentBullets.ToString () + "/" + BulletsLeft.ToString ();
+	}
+
 }
 
 

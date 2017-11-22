@@ -45,6 +45,7 @@ public class AmmoRefillManager : MonoBehaviour {
 			if (weapons.GetComponent<FireWeapon> ().BulletsLeft < weapons.GetComponent<FireWeapon> ().MaxBullets && GameManager.GetComponent<CurrencyManager> ().Money >= Cost) {
 				//Debug.Log ("We found weapons that have little ammo left and we have enough money to refill. Refilling");
 				weapons.GetComponent<FireWeapon> ().BulletsLeft = weapons.GetComponent<FireWeapon> ().MaxBullets;
+				weapons.GetComponent<FireWeapon> ().UpdateAmmo ();
 				GameManager.GetComponent<CurrencyManager> ().Money = GameManager.GetComponent<CurrencyManager> ().Money - Cost;
 				CostMultiplier = 0;
 				CheckAmmo ();
