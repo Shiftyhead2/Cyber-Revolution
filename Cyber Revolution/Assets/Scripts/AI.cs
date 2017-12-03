@@ -13,6 +13,9 @@ public class AI : MonoBehaviour {
 	public AudioClip[] ChaseClips;
 	public AudioClip[] AttackClips;
 	public EnemyHealth HealthScript;
+	public Material NonEnrageMaterial;
+	public Material EnrageMaterial; 
+	public Renderer MyMeshRenderer;
 	public float AudioTime;
 	public float AudioDelay;
 	public float MoveSpeed;
@@ -43,11 +46,17 @@ public class AI : MonoBehaviour {
 		myAgent = GetComponent<NavMeshAgent> ();
 		myAgent.stoppingDistance = stoppingDistance;
 		thePlayer = GameObject.FindGameObjectWithTag ("Player");
+		MyMeshRenderer = GetComponentInChildren<Renderer> ();
 		MyAnim = GetComponent<Animator> ();
 		MyAudio = GetComponent<AudioSource> ();
 		HealthScript = GetComponent<EnemyHealth> ();
 		AudioDelay = Random.Range (10, 30);
 
+		if (canEnrage) {
+			MyMeshRenderer.material = NonEnrageMaterial;
+		} else {
+			//Do nothing
+		}
 		myAgent.speed = MoveSpeed;
 
 		damageRate = Time.time;
@@ -149,6 +158,7 @@ public class AI : MonoBehaviour {
 		MoveSpeed = EnrageMoveSpeed;
 		myAgent.speed = MoveSpeed;
 		damage = EnrageDamage;
+		MyMeshRenderer.material = EnrageMaterial;
 	}
 		
 	#endregion

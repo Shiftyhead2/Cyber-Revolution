@@ -759,7 +759,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177440228106640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.717804, y: 0.00000011920929, z: 29.042633}
+  m_LocalPosition: {x: 4.636079, y: 0.20083694, z: -3.0901046}
   m_LocalScale: {x: 0.62762743, y: 0.6276275, z: 0.6276275}
   m_Children:
   - {fileID: 4042292352856092}
@@ -1033,6 +1033,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bfc9967c0140d5d4a81aa7b1bc8382b2, type: 3}
   - {fileID: 8300000, guid: 82593dab1fb22f94b86b4529f5fbeda2, type: 3}
   HealthScript: {fileID: 0}
+  NonEnrageMaterial: {fileID: 2100000, guid: 7c3ec734872a7bb409d8c2347c486f28, type: 2}
+  EnrageMaterial: {fileID: 2100000, guid: ecfba63daeac71b49b14fc93eefcb1d3, type: 2}
+  MyMeshRenderer: {fileID: 0}
   AudioTime: 0
   AudioDelay: 0
   MoveSpeed: 2.5
