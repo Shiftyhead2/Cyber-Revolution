@@ -1374,7 +1374,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1907863281049602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.19, y: 2.567914, z: -0.54}
+  m_LocalPosition: {x: 1.19, y: 2.67, z: -0.54}
   m_LocalScale: {x: 1.2990817, y: 1.2990801, z: 1.2990817}
   m_Children: []
   m_Father: {fileID: 4518619849571246}
@@ -3940,8 +3940,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: 00c4d55f4dc74e546abf0e2648d4cdea, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.3
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114108750666601896
@@ -3985,8 +3985,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: b9810fed10bf04b428883dcd3fbe2357, type: 3}
   OurParent: {fileID: 0}
   firerate: 1
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114268145931600450
@@ -4030,8 +4030,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: 7a5ec81afe201664b99c30a2d6ef4d40, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.09
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114317900136290700
@@ -4075,8 +4075,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: ab8469b8059121747b478f716284332b, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.6
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114369783883179550
@@ -4277,8 +4277,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: 3d136fa8285504f4183c2b5f4952ffef, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.05
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114724061370555412
@@ -4322,8 +4322,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: b1314899972d6ec4590d3e5324a8d143, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.075
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114794602402416764
@@ -4367,8 +4367,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: 5bc232762e952c84da3f69e6149aff91, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.335
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!114 &114822553282064380
@@ -4412,8 +4412,8 @@ MonoBehaviour:
   ClipOut: {fileID: 8300000, guid: df45513b5a21f174d8edae70dd3f8a8b, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.08
-  CurrentAmmoText: {fileID: 0}
-  BulletsLeftAmmoText: {fileID: 0}
+  AmmoUI: {fileID: 0}
+  AmmoUIText: {fileID: 0}
   Crosshair: {fileID: 0}
   CrosshairAnimator: {fileID: 0}
 --- !u!124 &124084817960309086

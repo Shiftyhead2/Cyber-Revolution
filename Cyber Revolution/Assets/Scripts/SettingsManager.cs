@@ -125,7 +125,7 @@ public class SettingsManager : MonoBehaviour {
 	public void OnExitButtonClick(){
 		SaveSettings ();
 		MainCanvas.GetComponentInChildren<Canvas> ().enabled = false;
-		CanvasGroup.GetComponentInChildren<Canvas> ().enabled = true;
+		CanvasGroup.GetComponent<MenuBehaviour> ().IsInSettings = false;
 	}
 
 	public void SaveSettings(){

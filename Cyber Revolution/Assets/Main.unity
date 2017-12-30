@@ -13643,56 +13643,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114317900136290700, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114317900136290700, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114108750666601896, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114822553282064380, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114542455680794312, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114794602402416764, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114515207055570436, guid: bdd56b33382c3b7429c193e6f9b701cf,
         type: 2}
       propertyPath: PlayerHPtext
@@ -13728,36 +13678,6 @@ Prefab:
       propertyPath: GameOverCanvas
       value: 
       objectReference: {fileID: 1699570080}
-    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114268145931600450, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114028593919096568, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: CurrentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114724061370555412, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: BulletsLeftAmmoText
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
   m_IsPrefabParent: 0
