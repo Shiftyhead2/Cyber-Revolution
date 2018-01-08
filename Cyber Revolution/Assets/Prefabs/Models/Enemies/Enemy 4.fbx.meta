@@ -1,0 +1,683 @@
+fileFormatVersion: 2
+guid: 4f50b66b2c44f8743bb3b23631c8f013
+timeCreated: 1515360716
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest
+    100002: //RootNode
+    100004: Enemy4
+    100006: Enemy4Mesh
+    100008: Foot.L
+    100010: Foot.L_end
+    100012: Foot.R
+    100014: Foot.R_end
+    100016: Hand.L
+    100018: Hand.L_end
+    100020: Hand.R
+    100022: Hand.R_end
+    100024: Head
+    100026: Head_end
+    100028: Hip
+    100030: Knee.L
+    100032: Knee.R
+    100034: Neck
+    100036: Shoulder.L
+    100038: Shoulder.R
+    100040: Spine
+    100042: UpperArm.L
+    100044: UpperArm.R
+    100046: UpperLeg.L
+    100048: UpperLeg.R
+    400000: Chest
+    400002: //RootNode
+    400004: Enemy4
+    400006: Enemy4Mesh
+    400008: Foot.L
+    400010: Foot.L_end
+    400012: Foot.R
+    400014: Foot.R_end
+    400016: Hand.L
+    400018: Hand.L_end
+    400020: Hand.R
+    400022: Hand.R_end
+    400024: Head
+    400026: Head_end
+    400028: Hip
+    400030: Knee.L
+    400032: Knee.R
+    400034: Neck
+    400036: Shoulder.L
+    400038: Shoulder.R
+    400040: Spine
+    400042: UpperArm.L
+    400044: UpperArm.R
+    400046: UpperLeg.L
+    400048: UpperLeg.R
+    4300000: Enemy4Mesh
+    7400000: Enemy4|Attack1.001
+    7400002: Enemy4|Attack2
+    7400004: Enemy4|Attack3
+    7400006: Enemy4|Die
+    7400008: Enemy4|Enemy4Action
+    7400010: Enemy4|Attack1
+    7400012: Enemy4|Idle
+    7400014: Enemy4|Idle.001
+    7400016: Enemy4|Walk
+    9500000: //RootNode
+    13700000: Enemy4Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Enemy4|Attack2
+      takeName: Enemy4|Attack2
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Attack3
+      takeName: Enemy4|Attack3
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Die
+      takeName: Enemy4|Die
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Attack1
+      takeName: Enemy4|Attack1
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Idle
+      takeName: Enemy4|Idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Idle.001
+      takeName: Enemy4|Idle.001
+      firstFrame: 0
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Enemy4|Walk
+      takeName: Enemy4|Walk
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Enemy4
+        weight: 1
+      - path: Enemy4/Hip
+        weight: 1
+      - path: Enemy4/Hip/Spine
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Neck/Head/Head_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.L/UpperArm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R
+        weight: 1
+      - path: Enemy4/Hip/Spine/Chest/Shoulder.R/UpperArm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.L/Knee.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R
+        weight: 1
+      - path: Enemy4/Hip/UpperLeg.R/Knee.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Enemy4Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

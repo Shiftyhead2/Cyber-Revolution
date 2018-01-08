@@ -64,7 +64,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071492966582406}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c447e6a4cb4c8540947e600f2e6124e, type: 3}
   m_Name: 
@@ -77,28 +77,53 @@ MonoBehaviour:
   - Name: Wave 1
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
-    Count: 8
-    Rate: 2
+    Count: 4
+    Rate: 0.5
   - Name: Wave 2
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
-    Count: 16
-    Rate: 1.5
+    Count: 8
+    Rate: 0.5
   - Name: Wave 3
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
-    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
-    Count: 24
-    Rate: 1
+    - {fileID: 4451197426924174, guid: 669ea970b219dea4da2d041d445fd67c, type: 2}
+    Count: 16
+    Rate: 0.5
   - Name: Wave 4
     Enemy:
     - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
     - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4451197426924174, guid: 669ea970b219dea4da2d041d445fd67c, type: 2}
+    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
+    Count: 24
+    Rate: 1
+  - Name: Wave 5
+    Enemy:
+    - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
+    - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4451197426924174, guid: 669ea970b219dea4da2d041d445fd67c, type: 2}
     - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
     Count: 32
-    Rate: 0.5
+    Rate: 1.5
+  - Name: Wave 6
+    Enemy:
+    - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
+    - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4451197426924174, guid: 669ea970b219dea4da2d041d445fd67c, type: 2}
+    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
+    Count: 36
+    Rate: 2
+  - Name: Wave 7
+    Enemy:
+    - {fileID: 4687142265847204, guid: 3bf0e64f2e4661b48961713743c442cd, type: 2}
+    - {fileID: 4145823524564558, guid: 216cb12f554a7414aaef7e9956b3688c, type: 2}
+    - {fileID: 4451197426924174, guid: 669ea970b219dea4da2d041d445fd67c, type: 2}
+    - {fileID: 4977720013739944, guid: c386507fc8e66a6499a98c1044fb3192, type: 2}
+    Count: 42
+    Rate: 2.5
   SpawnPoint:
   - {fileID: 0}
   - {fileID: 0}
@@ -111,7 +136,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 15
   waveCountDown: 0
   state: 2
 --- !u!114 &114879593856460956

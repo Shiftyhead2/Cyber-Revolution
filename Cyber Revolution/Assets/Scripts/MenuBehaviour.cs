@@ -12,19 +12,30 @@ public class MenuBehaviour : MonoBehaviour {
 
 	public GameObject MainMenuCanvas;
 	public GameObject SettingsCanvas;
+	public GameObject GameStatsManager;
 	public Button PlayButton;
 	public Button SettingsButton;
 	public Button ExitButton;
 
 	void Start(){
-		GameJolt.UI.Manager.Instance.ShowSignIn ();
+		if (GameJolt.API.Manager.Instance.CurrentUser == null  && IsSigned ==  false) {
+			GameJolt.UI.Manager.Instance.ShowSignIn ((bool success) => {
+				if (success) {
+					//Debug.Log ("Succesfully Logged in!Welcome user: " + GameJolt.API.Manager.Instance.CurrentUser.Name);
+				} else { 
+					//Debug.Log ("The user did not succesfully log in!");
+					GameJolt.UI.Manager.Instance.ShowSignIn();
+				}
+			});
+		}
+		GameStatsManager = GameObject.Find ("GameStats");
 	}
 
 	void Update(){
-		if (GameJolt.API.Manager.Instance.CurrentUser == null) {
-			IsSigned = false;
-		} else {
+		if (GameJolt.API.Manager.Instance.CurrentUser != null) {
 			IsSigned = true;
+		} else {
+			IsSigned = false;
 		}
 
 		if (IsSigned == false || IsInSettings!=false) {
@@ -57,6 +68,7 @@ public class MenuBehaviour : MonoBehaviour {
 	}
 
 	public void OnExitButtonClick(){
+		GameStatsManager.GetComponent<GameStatManager> ().SaveStats ();
 		Application.Quit ();
 	}
 

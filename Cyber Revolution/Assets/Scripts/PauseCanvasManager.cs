@@ -9,12 +9,14 @@ public class PauseCanvasManager : MonoBehaviour {
 	public Button ResumeGame;
 	public Button ExitGame;
 	public GameObject GameManager;
+	public GameObject GameStatManager;
 
 
 	void OnEnable(){
 		ResumeGame.onClick.AddListener (delegate {Resume();});
 		ExitGame.onClick.AddListener (delegate {Exit ();});
 		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
+		GameStatManager = GameObject.Find ("GameStats");
 
 	}
 
@@ -23,6 +25,7 @@ public class PauseCanvasManager : MonoBehaviour {
 	}
 
 	public void Exit(){
+		GameStatManager.GetComponent<GameStatManager> ().SaveStats ();
 		Application.Quit();
 	}
 	

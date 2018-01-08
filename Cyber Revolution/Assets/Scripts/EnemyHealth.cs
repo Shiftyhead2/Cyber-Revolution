@@ -12,6 +12,7 @@ public class EnemyHealth : MonoBehaviour {
 	public float HalfHealth;
 	[SerializeField] private float ArmorPoints;
 	public GameObject GameManager;
+	public GameObject GameStatManager;
 	[SerializeField] private int MinCost;
 	[SerializeField] private int MaxCost;
 	[SerializeField] private int Cost;
@@ -32,6 +33,7 @@ public class EnemyHealth : MonoBehaviour {
 	void Start(){
 		Audio = GetComponent<AudioSource> ();
 		GameManager =  GameObject.FindGameObjectWithTag ("GameManager");
+		GameStatManager = GameObject.Find ("GameStats");
 		if (MoneyGained != null) {
 			MoneyGainedText = MoneyGained.GetComponent<Text> ();
 			TextAnimator = MoneyGained.GetComponent<Animator> ();
@@ -88,6 +90,7 @@ public class EnemyHealth : MonoBehaviour {
 		TextAnimator.CrossFadeInFixedTime ("Gain Animation", 0.1f);
 		MoneyGainedText.text = "+" + Cost.ToString () + "$";
 		GameManager.GetComponent<CurrencyManager> ().Money += Cost;
+		GameStatManager.GetComponent<GameStatManager> ().Gamestats.Kills += 1;
 	}
 	#endregion
 }
