@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour {
 
-	public enum SpawnState {Spawning,Waiting,Counting};
+	public enum SpawnState {Spawning,Waiting,Counting,GameWon};
 	public Text WaveSpawnerNumber;
 	public Text WaveIndicator;
 	public Text EnemiesRemaining;
+	public GameObject GameWonCanvas;
+	public GameObject GameStatManager;
+	public GameObject PlayerCanvas;
+	public Canvas GameWinCanvas;
+	public bool GameWon;
 	public string WaveCompletedText;
 
 	[System.Serializable]
@@ -39,23 +44,38 @@ public class WaveSpawner : MonoBehaviour {
 			Debug.LogError ("No spawnpoints found!");
 		}
 
+		PlayerCanvas = GameObject.Find ("PlayerCanvas");
+		GameWonCanvas = GameObject.Find ("GameWonCanvas");
+		GameWinCanvas = GameWonCanvas.GetComponent<Canvas> ();
+		GameStatManager = GameObject.Find ("GameStats");
+
+
 		waveCountDown = timeBetweenWaves;
 
 	}
 
 	void Update(){
+		if (GameWon == true) {
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+			state = SpawnState.GameWon;
+			GameWinCanvas.enabled = true;
+			PlayerCanvas.GetComponent<Canvas> ().enabled = false;
+
+		}
+
+
+		if (state == SpawnState.GameWon) {
+			return;
+		}
 
 		if (state == SpawnState.Waiting) {
 			if (!EnemyIsAlive ()) {
 				WaveCompleted ();
-
-				
 			} else {
 				return;
 			}
-
 		}
-
 		if (waveCountDown <= 0) {
 			if (state != SpawnState.Spawning) {
 				//Start spawning wave
@@ -77,8 +97,8 @@ public class WaveSpawner : MonoBehaviour {
 		EnemiesRemaining.text = "0";
 
 		if (nextWave + 1 > waves.Length - 1) {
-			nextWave = 0;
-			//Debug.Log ("All waves completed! Looping and making more enemies...");
+			GameWon = true;
+			GameStatManager.GetComponent<GameStatManager> ().Gamestats.TimesSurvived += 1;
 		} else {
 			nextWave++;
 		}

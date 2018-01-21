@@ -985,8 +985,8 @@ MonoBehaviour:
   ArmorPoints: 5
   GameManager: {fileID: 0}
   GameStatManager: {fileID: 0}
-  MinCost: 150
-  MaxCost: 450
+  MinCost: 500
+  MaxCost: 1000
   Cost: 0
   Audio: {fileID: 0}
   HurtClips:

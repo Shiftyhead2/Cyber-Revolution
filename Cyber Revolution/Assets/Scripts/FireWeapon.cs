@@ -81,12 +81,12 @@ public class FireWeapon : MonoBehaviour {
 	#region Start
 	// Use this for initialization
 	void Start () {
+		OurParent = GameObject.FindGameObjectWithTag ("Player");
+		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		AmmoUI = GameObject.Find ("Ammo Text");
 		AmmoUIText = AmmoUI.GetComponent<Text> ();
 		Crosshair = GameObject.FindGameObjectWithTag ("Crosshair");
 		MyAudioSource = GetComponent<AudioSource> ();
-		OurParent = GameObject.FindGameObjectWithTag ("Player");
-		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		CurrentBullets = BulletsPerMag;
 		CrosshairAnimator = Crosshair.GetComponent<Animator> ();
 		maximumSpread = maxSpread;
@@ -98,8 +98,28 @@ public class FireWeapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+
+		if(GameManager.GetComponent<PauseManager> ().IsPaused != true  ){
+			//Debug.Log ("Enabling all player fuctions!");
+			OurParent.GetComponent<FirstPersonController> ().enabled = true;
+			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = true;
+			OurParent.GetComponent<PlayerHP> ().enabled = true;
+			OurParent.GetComponentInChildren<WeaponSway> ().enabled = true;
+
+		}
+
+		//Checking if the game is paused or if the game has been won
+		if (GameManager.GetComponent<PauseManager> ().IsPaused == true || GameManager.GetComponent<WaveSpawner>().GameWon == true  ) {
+			//Debug.Log ("Disabling all player fuctions");
+			OurParent.GetComponent<FirstPersonController> ().enabled = false;
+			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = false;
+			OurParent.GetComponent<PlayerHP> ().enabled = false;
+			OurParent.GetComponentInChildren<WeaponSway> ().enabled = false;
+		}  
+
+
 		//This is the input where if you press mouse 1 or ctrl you shoot if you have bullets
-		if(Input.GetButton("Fire1")){
+		if(Input.GetButton("Fire1") &&  GameManager.GetComponent<WaveSpawner>().GameWon != true ){
 			if (CurrentBullets > 0) {
 				Fire ();
 			} else if (BulletsLeft > 0) {
@@ -143,16 +163,7 @@ public class FireWeapon : MonoBehaviour {
 			StableAim ();
 		}
 
-		//Checking if the game is paused
-		if (GameManager.GetComponent<PauseManager> ().IsPaused == true) {
-			OurParent.GetComponent<FirstPersonController> ().enabled = false;
-			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = false;
-			OurParent.GetComponent<PlayerHP> ().enabled = false;
-		} else {
-			OurParent.GetComponent<FirstPersonController> ().enabled = true;
-			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = true;
-			OurParent.GetComponent<PlayerHP> ().enabled = true;
-		}
+
 	}
 
 	#endregion 
@@ -275,7 +286,7 @@ public class FireWeapon : MonoBehaviour {
 	private void DoReload(){
 		AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo (0);
 
-		if (IsReload|| IsHalfReload)
+		if (IsReload || IsHalfReload)
 			return;
 		
 		if (CurrentBullets < BulletsPerMag && CurrentBullets > 0 && HasHalfReload == true ) {

@@ -9,12 +9,14 @@ public class PauseManager : MonoBehaviour {
 	public GameObject PauseCanvas;
 	public GameObject PlayerCanvas;
 	public GameObject Player;
+	public GameObject GameManager;
 	public Canvas PauseMenuCanvas;
 
 	// Use this for initialization
 	void Start () {
 		PauseCanvas = GameObject.Find ("Pause Canvas");
 		PlayerCanvas = GameObject.Find ("PlayerCanvas");
+		GameManager = GameObject.Find ("GameManager");
 		Player = GameObject.FindGameObjectWithTag ("Player");
 		IsPaused = false;
 		
@@ -22,9 +24,10 @@ public class PauseManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Escape) && Player != null && Player.GetComponent<PlayerHP>().PlayerIsShooping != true) {
+		if (Input.GetKeyDown (KeyCode.Escape) && Player != null && Player.GetComponent<PlayerHP>().PlayerIsShooping != true && GameManager.GetComponent<WaveSpawner>().GameWon !=true) {
 			IsPaused = !IsPaused;
 		}
+			
 
 		if (Player == null) {
 			//Don't spam me with fucking stupid error messages. The player is dead.
@@ -51,7 +54,7 @@ public class PauseManager : MonoBehaviour {
 		PauseMenuCanvas.enabled = false;
 		PlayerCanvas.SetActive (true);
 		if (Player != null) {
-			if (Player.GetComponent<PlayerHP> ().PlayerIsShooping != true) {
+			if (Player.GetComponent<PlayerHP> ().PlayerIsShooping != true && GameManager.GetComponent<WaveSpawner>().GameWon !=true ) {
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
 			}

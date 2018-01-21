@@ -13,36 +13,48 @@ public class GameWinManager : MonoBehaviour {
 	public Text KillsText;
 	public GameObject  GameStatsManager;
 
-	void Start(){
+	void Awake(){
 		GameStatsManager = GameObject.Find ("GameStats");
+		if (GameStatsManager == null) {
+			//Do nothing
+		}
 	}
 
 	void OnEnable(){
 		Restart.onClick.AddListener (delegate {RestartLevel ();});
 		MainMenu.onClick.AddListener (delegate {BackToMenu ();});
 		Exit.onClick.AddListener (delegate {ExitApplication ();});
-	}
+		if (GameStatsManager != null) {
+			KillsText.text = "Kills: " + GameStatsManager.GetComponent<GameStatManager> ().Gamestats.Kills.ToString ();
+		} else {
+			KillsText.text = "Kills:0";
+		}
 
-	void Update(){
 		if (GameWinCanvas.enabled != false) {
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
-			KillsText.text = "Kills: " + GameStatsManager.GetComponent<GameStatManager> ().Gamestats.Kills.ToString ();
 		}
 	}
 
 
+
+
 	public void RestartLevel(){
+		//Debug.Log ("Restarting level");
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
 
 	}
-
+		
 	public void BackToMenu(){
+		//Debug.Log ("Going back to menu");
+		GameStatsManager.GetComponent<GameStatManager> ().SaveStats ();
 		SceneManager.LoadScene (0);
 	}
 
 	public void ExitApplication(){
+		//Debug.Log ("Exiting game");
+		GameStatsManager.GetComponent<GameStatManager> ().SaveStats ();
 		Application.Quit ();
 
 	}

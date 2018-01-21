@@ -939,13 +939,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c8ff96c59e067f145a316ade79b57e23, type: 3}
   - {fileID: 8300000, guid: 8793eaa13aaa1104db15fcc37610cd0c, type: 3}
   - {fileID: 8300000, guid: 8793eaa13aaa1104db15fcc37610cd0c, type: 3}
+  HealthScript: {fileID: 0}
+  NonEnrageMaterial: {fileID: 0}
+  EnrageMaterial: {fileID: 0}
+  MyMeshRenderer: {fileID: 0}
   AudioTime: 0
   AudioDelay: 0
   MoveSpeed: 3.5
   LookSpeed: 4.5
+  EnrageMoveSpeed: 0
   chaseTarget: 1
+  canEnrage: 0
   stoppingDistance: 2.5
   damage: 10
+  EnrageDamage: 0
   damageRate: 0
   DamageDelay: 1.5
 --- !u!114 &114350420719798654
@@ -1025,10 +1032,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartHealth: 100
   CurrentHealth: 0
+  HalfHealth: 0
   ArmorPoints: 0
   GameManager: {fileID: 0}
-  MinCost: 10
-  MaxCost: 40
+  GameStatManager: {fileID: 0}
+  MinCost: 50
+  MaxCost: 150
   Cost: 0
   Audio: {fileID: 0}
   HurtClips:
@@ -1040,6 +1049,9 @@ MonoBehaviour:
   Corpse: {fileID: 4848858675812588, guid: 9370e26977d0a334e89f6d3948a672ed, type: 2}
   HealthBar: {fileID: 114740343091379362}
   HealthBarSlider: {fileID: 114888634690152592}
+  MoneyGained: {fileID: 0}
+  MoneyGainedText: {fileID: 0}
+  TextAnimator: {fileID: 0}
 --- !u!114 &114888634690152592
 MonoBehaviour:
   m_ObjectHideFlags: 1

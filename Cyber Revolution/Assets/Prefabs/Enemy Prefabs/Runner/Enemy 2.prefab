@@ -967,10 +967,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartHealth: 95
   CurrentHealth: 0
+  HalfHealth: 0
   ArmorPoints: 0.5
   GameManager: {fileID: 0}
-  MinCost: 5
-  MaxCost: 25
+  GameStatManager: {fileID: 0}
+  MinCost: 10
+  MaxCost: 50
   Cost: 0
   Audio: {fileID: 0}
   HurtClips:
@@ -1018,13 +1020,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f43f343d56ea4c94eb8a08550e77bd90, type: 3}
   - {fileID: 8300000, guid: 942272bc1c0658342b115260931c10ca, type: 3}
   - {fileID: 8300000, guid: d391d81664f54bc4e95c381308839b0c, type: 3}
+  HealthScript: {fileID: 0}
+  NonEnrageMaterial: {fileID: 0}
+  EnrageMaterial: {fileID: 0}
+  MyMeshRenderer: {fileID: 0}
   AudioTime: 0
   AudioDelay: 0
   MoveSpeed: 6.5
   LookSpeed: 6
+  EnrageMoveSpeed: 0
   chaseTarget: 1
+  canEnrage: 0
   stoppingDistance: 2.5
   damage: 5
+  EnrageDamage: 0
   damageRate: 0
   DamageDelay: 1.5
 --- !u!114 &114439280733019526

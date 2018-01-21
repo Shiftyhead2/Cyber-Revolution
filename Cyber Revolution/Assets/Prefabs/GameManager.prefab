@@ -57,6 +57,7 @@ MonoBehaviour:
   PauseCanvas: {fileID: 0}
   PlayerCanvas: {fileID: 0}
   Player: {fileID: 0}
+  GameManager: {fileID: 0}
   PauseMenuCanvas: {fileID: 0}
 --- !u!114 &114800274965095674
 MonoBehaviour:
@@ -72,6 +73,11 @@ MonoBehaviour:
   WaveSpawnerNumber: {fileID: 0}
   WaveIndicator: {fileID: 0}
   EnemiesRemaining: {fileID: 0}
+  GameWonCanvas: {fileID: 0}
+  GameStatManager: {fileID: 0}
+  PlayerCanvas: {fileID: 0}
+  GameWinCanvas: {fileID: 0}
+  GameWon: 0
   WaveCompletedText: Wave completed
   waves:
   - Name: Wave 1
@@ -136,7 +142,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  timeBetweenWaves: 15
+  timeBetweenWaves: 20
   waveCountDown: 0
   state: 2
 --- !u!114 &114879593856460956

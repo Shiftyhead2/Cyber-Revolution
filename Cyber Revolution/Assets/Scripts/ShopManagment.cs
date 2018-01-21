@@ -39,8 +39,10 @@ public class ShopManagment : MonoBehaviour {
 
 	void OnDisable(){
 		MyController.GetComponent<PlayerHP> ().PlayerIsShooping = false;
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
+		if (GameManager.GetComponent<WaveSpawner> ().GameWon != true) {
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
 		ShopCanvas.SetActive (false);
 		
 	}
