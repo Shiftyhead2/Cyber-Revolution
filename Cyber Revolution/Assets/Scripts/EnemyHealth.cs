@@ -26,6 +26,8 @@ public class EnemyHealth : MonoBehaviour {
 	public GameObject MoneyGained;
 	public Text MoneyGainedText;
 
+
+
 	[SerializeField] private Animator TextAnimator;
 
 	#endregion
@@ -85,12 +87,16 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	private void Die(){
-		Destroy (gameObject);
 		Instantiate (Corpse, this.gameObject.transform.position, this.gameObject.transform.rotation);
 		TextAnimator.CrossFadeInFixedTime ("Gain Animation", 0.1f);
 		MoneyGainedText.text = "+" + Cost.ToString () + "$";
 		GameManager.GetComponent<CurrencyManager> ().Money += Cost;
-		GameStatManager.GetComponent<GameStatManager> ().Gamestats.Kills += 1;
+		GameManager.GetComponent<WaveSpawner> ().CurrentEnemiesAlive -= 1;
+		if (GameStatManager != null) {
+			GameStatManager.GetComponent<GameStatManager> ().Gamestats.Kills += 1;
+		}
+		Destroy (gameObject);
+
 	}
 	#endregion
 }

@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour {
 	public Text WaveSpawnerNumber;
 	public Text WaveIndicator;
 	public Text EnemiesRemaining;
+	public int CurrentEnemiesAlive;
 	public GameObject GameWonCanvas;
 	public GameObject GameStatManager;
 	public GameObject PlayerCanvas;
@@ -55,6 +56,9 @@ public class WaveSpawner : MonoBehaviour {
 	}
 
 	void Update(){
+		EnemiesRemaining.text = CurrentEnemiesAlive.ToString ();
+
+
 		if (GameWon == true) {
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
@@ -94,11 +98,12 @@ public class WaveSpawner : MonoBehaviour {
 		state = SpawnState.Counting;
 		waveCountDown = timeBetweenWaves;
 		WaveIndicator.text = WaveCompletedText;
-		EnemiesRemaining.text = "0";
 
 		if (nextWave + 1 > waves.Length - 1) {
 			GameWon = true;
-			GameStatManager.GetComponent<GameStatManager> ().Gamestats.TimesSurvived += 1;
+			if (GameStatManager != null) {
+				GameStatManager.GetComponent<GameStatManager> ().Gamestats.TimesSurvived += 1;
+			}
 		} else {
 			nextWave++;
 		}
@@ -122,7 +127,7 @@ public class WaveSpawner : MonoBehaviour {
 		state = SpawnState.Spawning;
 
 		WaveIndicator.text = _wave.Name;
-		EnemiesRemaining.text = _wave.Count.ToString ();
+		CurrentEnemiesAlive = _wave.Count;
 
 		//Spawn
 		for(int i = 0; i < _wave.Count; i++){
@@ -136,11 +141,11 @@ public class WaveSpawner : MonoBehaviour {
 		yield break;
 	}
 
-	void SpawnEnemy(Transform _enemy){
 
+
+	void SpawnEnemy(Transform _enemy){
 		//Debug.Log ("Spawning enemy:" + _enemy.name);
 		Transform _sp = SpawnPoint [Random.Range (0, SpawnPoint.Length)];
-		Instantiate (_enemy, _sp.position, _sp.rotation);
+		 Instantiate (_enemy, _sp.position, _sp.rotation);
 	}
-
 }

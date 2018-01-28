@@ -61,7 +61,7 @@ public class TrophyManagement : MonoBehaviour {
 			}
 
 			if (GameStatManager.GetComponent<GameStatManager> ().Gamestats.Kills == 20 && UnlockedKillTrophy2 != true) {
-				GameJolt.API.Trophies.Unlock (87110, (bool  success) => { 
+				GameJolt.API.Trophies.Unlock (87111, (bool  success) => { 
 					if (success) {
 						//Debug.Log ("We got a trophy!");
 					} else {
