@@ -62,8 +62,7 @@ public class WeaponSwitching : MonoBehaviour {
 			{
 				
 					hasChanged = true;
-					weapon.gameObject.SetActive (true);
-					weapon.GetComponent<FireWeapon> ().anim.CrossFadeInFixedTime ("Draw", 0.001f);
+                    weapon.gameObject.SetActive(true);
 			}
 			i++;
 		}

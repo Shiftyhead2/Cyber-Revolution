@@ -44,6 +44,9 @@ public class FireWeapon : MonoBehaviour {
 	public ParticleSystem muzzleFlash; //muzzle flash particle system
 	public GameObject HitParticles; //hit particles that spawn
 	public GameObject BulletObject; //Bullet holes
+    public Camera OurCamera;
+    public int AimFov;
+    public int NormalFov = 60;
 	public bool SteadyAim = false;//Checks if we are currently aiming
 
 	[Header("Audio")]
@@ -67,15 +70,13 @@ public class FireWeapon : MonoBehaviour {
 	[Header("UI")]
 	public GameObject AmmoUI;
 	public Text AmmoUIText;
-	public GameObject Crosshair;
-	[SerializeField]private Animator CrosshairAnimator;
 
 	#endregion
 
 	void OnEnable(){
-		AmmoUI = GameObject.Find ("Ammo Text");
+        AmmoUI = GameObject.Find ("Ammo Text");
 		AmmoUIText = AmmoUI.GetComponent<Text> ();
-		UpdateAmmo ();
+        UpdateAmmo ();
 	}
 
 	#region Start
@@ -85,10 +86,9 @@ public class FireWeapon : MonoBehaviour {
 		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		AmmoUI = GameObject.Find ("Ammo Text");
 		AmmoUIText = AmmoUI.GetComponent<Text> ();
-		Crosshair = GameObject.FindGameObjectWithTag ("Crosshair");
 		MyAudioSource = GetComponent<AudioSource> ();
+        BulletsLeft = MaxBullets;
 		CurrentBullets = BulletsPerMag;
-		CrosshairAnimator = Crosshair.GetComponent<Animator> ();
 		maximumSpread = maxSpread;
 		UpdateAmmo ();
 	}
@@ -98,8 +98,9 @@ public class FireWeapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+        
 
-		if(GameManager.GetComponent<PauseManager> ().IsPaused != true  ){
+        if (GameManager.GetComponent<PauseManager> ().IsPaused != true  ){
 			//Debug.Log ("Enabling all player fuctions!");
 			OurParent.GetComponent<FirstPersonController> ().enabled = true;
 			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = true;
@@ -139,16 +140,12 @@ public class FireWeapon : MonoBehaviour {
 		//Steady aim
 		if (Input.GetButton ("Fire2")) {
 			SteadyAim = true;
-			if (Crosshair != null) {
-				CrosshairAnimator.CrossFadeInFixedTime ("Aiming", 0.1f);
-			}
+            OurCamera.fieldOfView = AimFov;
 		} else {
 			SteadyAim = false;
 			maxSpread = maximumSpread;
-			if (Crosshair != null) {
-				CrosshairAnimator.CrossFadeInFixedTime ("Normal", 0.1f);
-			}
-		}
+            OurCamera.fieldOfView = NormalFov;
+        }
 	
 
 
