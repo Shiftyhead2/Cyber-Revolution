@@ -4534,6 +4534,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: 81f3e15148b830c46b1aa79b9a8d9df7, type: 3}
   ClipOut: {fileID: 8300000, guid: 00c4d55f4dc74e546abf0e2648d4cdea, type: 3}
+  ClipIn: {fileID: 8300000, guid: f06a868f1d2f7da46ab48406a5e5c966, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.15
   AmmoUI: {fileID: 0}
@@ -4580,6 +4583,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: 913bbe432467cde4c8ae57e98edb996e, type: 3}
   ClipOut: {fileID: 8300000, guid: 7a5ec81afe201664b99c30a2d6ef4d40, type: 3}
+  ClipIn: {fileID: 8300000, guid: 7c043a49e97b69e4abc5e394b09c2bc8, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.09
   AmmoUI: {fileID: 0}
@@ -4626,6 +4632,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: bb0f453c527f04241a0095ec2d429f8e, type: 3}
   ClipOut: {fileID: 8300000, guid: 3d136fa8285504f4183c2b5f4952ffef, type: 3}
+  ClipIn: {fileID: 8300000, guid: 3c4288c2173a67e41bb307c1bd07e383, type: 3}
+  BoltForward: {fileID: 8300000, guid: d98ed55eff1069e4c829dcdc7f172243, type: 3}
+  BoltBackward: {fileID: 8300000, guid: e164040daae07534a99e2ed6b7ca3935, type: 3}
   OurParent: {fileID: 0}
   firerate: 0.05
   AmmoUI: {fileID: 0}
@@ -4701,6 +4710,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: 7ce56c70ab676894490512715448d4c5, type: 3}
   ClipOut: {fileID: 8300000, guid: ab8469b8059121747b478f716284332b, type: 3}
+  ClipIn: {fileID: 8300000, guid: 0ac70ee6b20bc164ebc988d256227270, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.9
   AmmoUI: {fileID: 0}
@@ -4875,6 +4887,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: acfd59c60e43dd745846660878b9a0e3, type: 3}
   ClipOut: {fileID: 8300000, guid: b1314899972d6ec4590d3e5324a8d143, type: 3}
+  ClipIn: {fileID: 8300000, guid: b19b95c3352289649ad4289b51fd9e4a, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.07
   AmmoUI: {fileID: 0}
@@ -4921,6 +4936,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: f56accda67b9afc4298d51fa5d906c1d, type: 3}
   ClipOut: {fileID: 8300000, guid: df45513b5a21f174d8edae70dd3f8a8b, type: 3}
+  ClipIn: {fileID: 8300000, guid: ef04a406f41798d4ab3f4dd4f17c3942, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.06
   AmmoUI: {fileID: 0}
@@ -4967,6 +4985,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: 2850546959eff3848921f976da12be07, type: 3}
   ClipOut: {fileID: 8300000, guid: b9810fed10bf04b428883dcd3fbe2357, type: 3}
+  ClipIn: {fileID: 8300000, guid: 9ec4b3bb00a2b0944b7cf53eb085db80, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 1
   AmmoUI: {fileID: 0}
@@ -5013,6 +5034,9 @@ MonoBehaviour:
   SteadyAim: 0
   ShootSound: {fileID: 8300000, guid: b115f1a97462862408c7630e4c3d301e, type: 3}
   ClipOut: {fileID: 8300000, guid: 5bc232762e952c84da3f69e6149aff91, type: 3}
+  ClipIn: {fileID: 8300000, guid: 1270783db504abf44b2f60b4a1893dfe, type: 3}
+  BoltForward: {fileID: 0}
+  BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.1
   AmmoUI: {fileID: 0}

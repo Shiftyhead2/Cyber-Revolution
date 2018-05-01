@@ -45,7 +45,7 @@ public class WaveSpawner : MonoBehaviour {
 			Debug.LogError ("No spawnpoints found!");
 		}
 
-		PlayerCanvas = GameObject.Find ("PlayerCanvas");
+		PlayerCanvas = GameObject.Find ("PlayerCanvas 1");
 		GameWonCanvas = GameObject.Find ("GameWonCanvas");
 		GameWinCanvas = GameWonCanvas.GetComponent<Canvas> ();
 		GameStatManager = GameObject.Find ("GameStats");

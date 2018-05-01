@@ -5786,16 +5786,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
-        type: 2}
-      propertyPath: PauseMenuCanvas
-      value: 
-      objectReference: {fileID: 51505468}
-    - target: {fileID: 114879593856460956, guid: 7f302704a6fde3c4db98d996a978153f,
-        type: 2}
-      propertyPath: CurrentMoneyText
-      value: 
-      objectReference: {fileID: 1558131790}
     - target: {fileID: 114800274965095674, guid: 7f302704a6fde3c4db98d996a978153f,
         type: 2}
       propertyPath: WaveSpawnerNumber
@@ -5866,11 +5856,31 @@ Prefab:
       propertyPath: SpawnPoint.Array.data[10]
       value: 
       objectReference: {fileID: 351309353}
-    - target: {fileID: 114800274965095674, guid: 7f302704a6fde3c4db98d996a978153f,
+    - target: {fileID: 114879593856460956, guid: 7f302704a6fde3c4db98d996a978153f,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: CurrentMoneyText
+      value: 
+      objectReference: {fileID: 1558131790}
+    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: PauseCanvas
+      value: 
+      objectReference: {fileID: 1719690845}
+    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: PlayerCanvas
+      value: 
+      objectReference: {fileID: 113571444}
+    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 2061116024}
+    - target: {fileID: 114262857624927616, guid: 7f302704a6fde3c4db98d996a978153f,
+        type: 2}
+      propertyPath: PauseMenuCanvas
+      value: 
+      objectReference: {fileID: 51505468}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f302704a6fde3c4db98d996a978153f, type: 2}
   m_IsPrefabParent: 0
@@ -11167,10 +11177,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1491048664174160, guid: 82b2a3269b37398449b5a59c5ac85663, type: 2}
-      propertyPath: m_Name
-      value: PlayerCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 224685159779145290, guid: 82b2a3269b37398449b5a59c5ac85663,
         type: 2}
@@ -18850,6 +18856,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a50fdff8c50c9c04cba4a6d9c0574fb8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1719690845 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1940989567900444, guid: a50fdff8c50c9c04cba4a6d9c0574fb8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1719690844}
 --- !u!1001 &1722459254
 Prefab:
   m_ObjectHideFlags: 0
@@ -23490,6 +23501,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdd56b33382c3b7429c193e6f9b701cf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2061116024 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1320907185788968, guid: bdd56b33382c3b7429c193e6f9b701cf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2061116023}
 --- !u!1001 &2061995787
 Prefab:
   m_ObjectHideFlags: 0

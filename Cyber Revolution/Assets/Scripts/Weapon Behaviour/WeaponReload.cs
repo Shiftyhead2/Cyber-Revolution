@@ -6,7 +6,6 @@ public class WeaponReload : StateMachineBehaviour {
 
 	public float ReloadTime = 0f;
 	bool hasReloaded = false;
-	public AudioClip ClipIn;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -20,7 +19,6 @@ public class WeaponReload : StateMachineBehaviour {
 
 		if (stateInfo.normalizedTime >= ReloadTime) {
 			animator.GetComponent<FireWeapon> ().Reload();
-			animator.GetComponent<AudioSource> ().PlayOneShot (ClipIn);
 			hasReloaded = true;
 		}
 	}

@@ -149,6 +149,7 @@ MonoBehaviour:
   ResumeGame: {fileID: 114760004926010416}
   ExitGame: {fileID: 114301426123996292}
   GameManager: {fileID: 0}
+  GameStatManager: {fileID: 0}
 --- !u!114 &114038128436114686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -504,8 +505,8 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940989567900444}
-  m_Enabled: 1
-  serializedVersion: 2
+  m_Enabled: 0
+  serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -514,6 +515,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

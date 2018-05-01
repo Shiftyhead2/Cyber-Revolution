@@ -15,7 +15,7 @@ public class PauseManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PauseCanvas = GameObject.Find ("Pause Canvas");
-		PlayerCanvas = GameObject.Find ("PlayerCanvas");
+		PlayerCanvas = GameObject.Find ("PlayerCanvas 1");
 		GameManager = GameObject.Find ("GameManager");
 		Player = GameObject.FindGameObjectWithTag ("Player");
 		IsPaused = false;

@@ -44,18 +44,21 @@ public class FireWeapon : MonoBehaviour {
 	public ParticleSystem muzzleFlash; //muzzle flash particle system
 	public GameObject HitParticles; //hit particles that spawn
 	public GameObject BulletObject; //Bullet holes
-    public Camera OurCamera;
-    public int AimFov;
-    public int NormalFov = 60;
+    public Camera OurCamera; //Gets the parents camera
+    public int AimFov; //FOV when aiming
+    public int NormalFov = 60; // FOV when not aiming(aka normal FOV)
 	public bool SteadyAim = false;//Checks if we are currently aiming
 
 	[Header("Audio")]
 	AudioSource MyAudioSource;
 	public AudioClip ShootSound;//Sound for shooting
 	public AudioClip ClipOut;//Sound when starting to reload
+    public AudioClip ClipIn;//Sound that plays when the reload has finished
+    public AudioClip BoltForward; //Plays a sound when there is a bolt going forward
+    public AudioClip BoltBackward; //Plays a sound when thhere is a bolt going backwards
 
 
-
+    [Header("Parent and Gamemanager")]
 	public GameObject OurParent;
 	private GameObject GameManager;
 
@@ -297,7 +300,6 @@ public class FireWeapon : MonoBehaviour {
 			anim.CrossFadeInFixedTime ("Reload", 0.01f);
 		}
 
-		MyAudioSource.PlayOneShot (ClipOut);
 
 	}
 	#endregion
@@ -316,6 +318,22 @@ public class FireWeapon : MonoBehaviour {
 	public void SpawnShells(){
 		Instantiate (Shell, ShellEjection.position,ShellEjection.rotation);
 	}
+
+    public void OnClipOut() {
+        MyAudioSource.PlayOneShot(ClipOut);
+
+   }
+    public void OnClipIn() {
+        MyAudioSource.PlayOneShot(ClipIn);
+
+   }
+
+    public void OnBoltForward() {
+        MyAudioSource.PlayOneShot(BoltForward);
+    }
+    public void OnBoltBackwards() {
+        MyAudioSource.PlayOneShot(BoltBackward);
+   }
 
 }
 
