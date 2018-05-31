@@ -4513,11 +4513,10 @@ MonoBehaviour:
   MaxBullets: 120
   damage: 10.5
   ArmorPenetration: 2.5
-  normalSpread: 0.04
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.08
-  maximumSpread: 0
-  aimSpread: 0.02
+  maxSpread: 0.78
+  MaximumSpread: 0
+  aimSpread: 0.68
+  recoil: 0.55
   ShotgunPellets: 10
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4149899431623342, guid: 7f262bf8cd5b2c04e9bc28ed5ab86dca, type: 2}
@@ -4562,11 +4561,10 @@ MonoBehaviour:
   MaxBullets: 360
   damage: 30
   ArmorPenetration: 1.5
-  normalSpread: 0.01
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.04
-  maximumSpread: 0
-  aimSpread: 0
+  maxSpread: 0.55
+  MaximumSpread: 0
+  aimSpread: 0.275
+  recoil: 0.095
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
@@ -4611,11 +4609,10 @@ MonoBehaviour:
   MaxBullets: 200
   damage: 15
   ArmorPenetration: 0.5
-  normalSpread: 0
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.04
-  maximumSpread: 0
-  aimSpread: 0.02
+  maxSpread: 0.75
+  MaximumSpread: 0
+  aimSpread: 0.375
+  recoil: 0.3
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
@@ -4689,11 +4686,10 @@ MonoBehaviour:
   MaxBullets: 160
   damage: 10
   ArmorPenetration: 0
-  normalSpread: 0
-  TimeTillNextSpread: 0.01
-  maxSpread: 0
-  maximumSpread: 0
-  aimSpread: 0
+  maxSpread: 0.4
+  MaximumSpread: 0
+  aimSpread: 0.2
+  recoil: 0.15
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
@@ -4711,7 +4707,7 @@ MonoBehaviour:
   ShootSound: {fileID: 8300000, guid: 7ce56c70ab676894490512715448d4c5, type: 3}
   ClipOut: {fileID: 8300000, guid: ab8469b8059121747b478f716284332b, type: 3}
   ClipIn: {fileID: 8300000, guid: 0ac70ee6b20bc164ebc988d256227270, type: 3}
-  BoltForward: {fileID: 0}
+  BoltForward: {fileID: 8300000, guid: 8709d49f2b8c09f40b3a9eef3e3a7180, type: 3}
   BoltBackward: {fileID: 0}
   OurParent: {fileID: 0}
   firerate: 0.9
@@ -4770,6 +4766,7 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+    recoil: 0
   m_UseFovKick: 1
   m_FovKick:
     Camera: {fileID: 0}
@@ -4866,11 +4863,10 @@ MonoBehaviour:
   MaxBullets: 400
   damage: 25
   ArmorPenetration: 4.5
-  normalSpread: 0.04
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.08
-  maximumSpread: 0
-  aimSpread: 0.02
+  maxSpread: 0.8
+  MaximumSpread: 0
+  aimSpread: 0.53
+  recoil: 0.45
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}
@@ -4915,11 +4911,10 @@ MonoBehaviour:
   MaxBullets: 350
   damage: 16
   ArmorPenetration: 0.5
-  normalSpread: 0.02
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.05
-  maximumSpread: 0
-  aimSpread: 0.01
+  maxSpread: 0.65
+  MaximumSpread: 0
+  aimSpread: 0.325
+  recoil: 0.15
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 0}
@@ -4964,11 +4959,10 @@ MonoBehaviour:
   MaxBullets: 32
   damage: 10
   ArmorPenetration: 2.5
-  normalSpread: 0.02
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.04
-  maximumSpread: 0
-  aimSpread: 0.01
+  maxSpread: 0.65
+  MaximumSpread: 0
+  aimSpread: 0.55
+  recoil: 0.7
   ShotgunPellets: 8
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 0}
@@ -5013,11 +5007,10 @@ MonoBehaviour:
   MaxBullets: 200
   damage: 11.5
   ArmorPenetration: 0.5
-  normalSpread: 0
-  TimeTillNextSpread: 0.01
-  maxSpread: 0.04
-  maximumSpread: 0
-  aimSpread: 0
+  maxSpread: 0.6
+  MaximumSpread: 0
+  aimSpread: 0.3
+  recoil: 0.2
   ShotgunPellets: 0
   ShootPoint: {fileID: 4500017247593202}
   Shell: {fileID: 4517064970454628, guid: d3b9ff050860e4744953b53e6912f4b7, type: 2}

@@ -16247,12 +16247,72 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114472099006949878, guid: bdd56b33382c3b7429c193e6f9b701cf,
+    - target: {fileID: 114755791278207028, guid: bdd56b33382c3b7429c193e6f9b701cf,
         type: 2}
       propertyPath: AmmoUI
       value: 
       objectReference: {fileID: 1812732551}
-    - target: {fileID: 114472099006949878, guid: bdd56b33382c3b7429c193e6f9b701cf,
+    - target: {fileID: 114755791278207028, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114039853983080782, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114039853983080782, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114929256468392904, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114929256468392904, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114120365529615254, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114120365529615254, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114955511367030018, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114955511367030018, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114780182665590102, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114780182665590102, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUIText
+      value: 
+      objectReference: {fileID: 845765474}
+    - target: {fileID: 114192284042424700, guid: bdd56b33382c3b7429c193e6f9b701cf,
+        type: 2}
+      propertyPath: AmmoUI
+      value: 
+      objectReference: {fileID: 1812732551}
+    - target: {fileID: 114192284042424700, guid: bdd56b33382c3b7429c193e6f9b701cf,
         type: 2}
       propertyPath: AmmoUIText
       value: 
@@ -16292,72 +16352,12 @@ Prefab:
       propertyPath: GameOverCanvas
       value: 
       objectReference: {fileID: 1605479707}
-    - target: {fileID: 114192284042424700, guid: bdd56b33382c3b7429c193e6f9b701cf,
+    - target: {fileID: 114472099006949878, guid: bdd56b33382c3b7429c193e6f9b701cf,
         type: 2}
       propertyPath: AmmoUI
       value: 
       objectReference: {fileID: 1812732551}
-    - target: {fileID: 114192284042424700, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114780182665590102, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114780182665590102, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114955511367030018, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114955511367030018, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114120365529615254, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114120365529615254, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114929256468392904, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114929256468392904, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114039853983080782, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114039853983080782, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUIText
-      value: 
-      objectReference: {fileID: 845765474}
-    - target: {fileID: 114755791278207028, guid: bdd56b33382c3b7429c193e6f9b701cf,
-        type: 2}
-      propertyPath: AmmoUI
-      value: 
-      objectReference: {fileID: 1812732551}
-    - target: {fileID: 114755791278207028, guid: bdd56b33382c3b7429c193e6f9b701cf,
+    - target: {fileID: 114472099006949878, guid: bdd56b33382c3b7429c193e6f9b701cf,
         type: 2}
       propertyPath: AmmoUIText
       value: 

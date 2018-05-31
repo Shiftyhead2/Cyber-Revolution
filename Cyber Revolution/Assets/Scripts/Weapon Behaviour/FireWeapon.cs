@@ -26,11 +26,10 @@ public class FireWeapon : MonoBehaviour {
 	public int MaxBullets; //The maximum number of bullets(used for store only)
 	public float damage = 20f; // Damage the weapon does
 	public float ArmorPenetration;//Armor penetration
-	public float normalSpread = 0.0f; // Spread before firing
-	public float TimeTillNextSpread = 0.01f; //Time till next spread
-	public float maxSpread = 0.04f; // Maximum spread
-	[SerializeField]private float maximumSpread;//Maximum spread a gun can have
+	public float maxSpread; // Maximum spread
+    public float MaximumSpread;
 	public float aimSpread;//Spread when "aiming"
+    public float recoil;
 
 	[Header("ShotgunOnly")]
 	public int ShotgunPellets; //How many pellets does a shotgun fire?
@@ -60,6 +59,7 @@ public class FireWeapon : MonoBehaviour {
 
     [Header("Parent and Gamemanager")]
 	public GameObject OurParent;
+    protected FirstPersonController Controller;
 	private GameObject GameManager;
 
 	[Header("Weapon Firerate")]
@@ -85,14 +85,15 @@ public class FireWeapon : MonoBehaviour {
 	#region Start
 	// Use this for initialization
 	void Start () {
+        MaximumSpread = maxSpread;
 		OurParent = GameObject.FindGameObjectWithTag ("Player");
+        Controller = OurParent.GetComponent<FirstPersonController>();
 		GameManager = GameObject.FindGameObjectWithTag ("GameManager");
 		AmmoUI = GameObject.Find ("Ammo Text");
 		AmmoUIText = AmmoUI.GetComponent<Text> ();
 		MyAudioSource = GetComponent<AudioSource> ();
         BulletsLeft = MaxBullets;
 		CurrentBullets = BulletsPerMag;
-		maximumSpread = maxSpread;
 		UpdateAmmo ();
 	}
 	#endregion
@@ -105,7 +106,7 @@ public class FireWeapon : MonoBehaviour {
 
         if (GameManager.GetComponent<PauseManager> ().IsPaused != true  ){
 			//Debug.Log ("Enabling all player fuctions!");
-			OurParent.GetComponent<FirstPersonController> ().enabled = true;
+			Controller.enabled = true;
 			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = true;
 			OurParent.GetComponent<PlayerHP> ().enabled = true;
 			OurParent.GetComponentInChildren<WeaponSway> ().enabled = true;
@@ -115,7 +116,7 @@ public class FireWeapon : MonoBehaviour {
 		//Checking if the game is paused or if the game has been won
 		if (GameManager.GetComponent<PauseManager> ().IsPaused == true || GameManager.GetComponent<WaveSpawner>().GameWon == true  ) {
 			//Debug.Log ("Disabling all player fuctions");
-			OurParent.GetComponent<FirstPersonController> ().enabled = false;
+			Controller.enabled = false;
 			OurParent.GetComponentInChildren<WeaponSwitching>().enabled = false;
 			OurParent.GetComponent<PlayerHP> ().enabled = false;
 			OurParent.GetComponentInChildren<WeaponSway> ().enabled = false;
@@ -146,7 +147,7 @@ public class FireWeapon : MonoBehaviour {
             OurCamera.fieldOfView = AimFov;
 		} else {
 			SteadyAim = false;
-			maxSpread = maximumSpread;
+            maxSpread = MaximumSpread;
             OurCamera.fieldOfView = NormalFov;
         }
 	
@@ -193,14 +194,7 @@ public class FireWeapon : MonoBehaviour {
 		// Bullet Spread
 		if (GameObject.FindWithTag("Shotgun") == true) {
 			for (int i = 0; i < ShotgunPellets; i++) {
-				Vector3 direction = ShootPoint.forward; 
-				float shotgunSpread = Mathf.Lerp (normalSpread, maxSpread, firerate / TimeTillNextSpread );
-				direction.x += Random.Range (-shotgunSpread, shotgunSpread);
-				direction.y += Random.Range (-shotgunSpread, shotgunSpread);
-				direction.z += Random.Range (-shotgunSpread, shotgunSpread);
-
-
-				if (Physics.Raycast (ShootPoint.position, direction, out hit, range)) {
+				if (Physics.Raycast (ShootPoint.position, CalculateSpread(maxSpread,ShootPoint), out hit, range)) {
 					//Debug.Log (hit.transform.name + "found");
 
 
@@ -222,12 +216,7 @@ public class FireWeapon : MonoBehaviour {
 				}
 			}
 		} else {
-			Vector3 direction = ShootPoint.forward; 
-			float currentSpread = Mathf.Lerp (normalSpread, maxSpread, firerate / TimeTillNextSpread );
-			direction.x += Random.Range (-currentSpread, currentSpread);
-			direction.y += Random.Range (-currentSpread, currentSpread);
-			direction.z += Random.Range (-currentSpread, currentSpread);
-			if (Physics.Raycast (ShootPoint.position, direction, out hit, range)) {
+			if (Physics.Raycast (ShootPoint.position, CalculateSpread(maxSpread, ShootPoint), out hit, range)) {
 				//Debug.Log (hit.transform.name + "found");
 
 
@@ -252,6 +241,7 @@ public class FireWeapon : MonoBehaviour {
 
 		anim.CrossFadeInFixedTime ("Fire", 0.01f);
 		StartCoroutine (PlayGunEffect ());
+        Recoil();
 		PlayAudioClip ();
 
 		if (CanEject) {
@@ -263,7 +253,11 @@ public class FireWeapon : MonoBehaviour {
 		firetimer = 0.0f;
 
 	}
-	#endregion
+    #endregion
+
+    Vector3 CalculateSpread(float spread, Transform shootPoint) {
+        return Vector3.Lerp(shootPoint.TransformDirection(Vector3.forward * 100), Random.onUnitSphere, spread);
+    }
 
 	IEnumerator PlayGunEffect(){
 		muzzleFlash.Play ();
@@ -281,11 +275,12 @@ public class FireWeapon : MonoBehaviour {
 		BulletsLeft -= BulletsToDeduct;
 		CurrentBullets += BulletsToDeduct;
 		UpdateAmmo ();
-
-
-
 	}
-	#endregion
+    #endregion
+
+    void Recoil() {
+        Controller.mouseLook.Recoil(recoil);
+    }
 
 	#region DoReload
 	private void DoReload(){

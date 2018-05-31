@@ -12,6 +12,7 @@ public class MenuBehaviour : MonoBehaviour {
 
 
 
+
 	public GameObject MainMenuCanvas;
 	public GameObject SettingsCanvas;
 	public GameObject GameStatsManager;
@@ -20,6 +21,7 @@ public class MenuBehaviour : MonoBehaviour {
 	public Button ExitButton;
 	public Button TrophyButton;
 	public Text WelcomeMessage;
+   
 
 	void Start(){
 		if (GameJolt.API.Manager.Instance.CurrentUser == null  && IsSigned ==  false) {
@@ -52,10 +54,14 @@ public class MenuBehaviour : MonoBehaviour {
 
 
 		if (GameJolt.API.Manager.Instance.CurrentUser != null) {
-			WelcomeMessage.text = "Welcome user: " + GameJolt.API.Manager.Instance.CurrentUser.Name.ToString ();
+			WelcomeMessage.text = "Welcome agent: " + GameJolt.API.Manager.Instance.CurrentUser.Name.ToString ();
 		}
 
-	}
+  
+
+
+
+    }
 
 	void OnEnable(){
 		if (SettingsCanvas.GetComponentInChildren<Canvas> ().enabled == true) {
@@ -64,8 +70,7 @@ public class MenuBehaviour : MonoBehaviour {
 			//Do nothing.The object in question is already disabled
 		}
 
-	
-		SettingsButton.onClick.AddListener (delegate {OnSettingsButtonClick ();});
+        SettingsButton.onClick.AddListener (delegate {OnSettingsButtonClick ();});
 		ExitButton.onClick.AddListener (delegate {OnExitButtonClick ();});
 
 	}
@@ -93,12 +98,13 @@ public class MenuBehaviour : MonoBehaviour {
 		}
 	}
 
-	public void OnLeaderBoardsButtonClicked(){
-		if (GameJolt.API.Manager.Instance.CurrentUser != null) {
-			GameJolt.UI.Manager.Instance.ShowLeaderboards();
-		}
-	}
-
+    public void OnLeaderBoardsButtonClicked()
+    {
+        if (GameJolt.API.Manager.Instance.CurrentUser != null)
+        {
+            GameJolt.UI.Manager.Instance.ShowLeaderboards();
+        }
+    }
 
 
 }
